@@ -1089,6 +1089,23 @@ function poseOk(p: string, bottom: string, scene: string): boolean {
   return scene.indexOf("无缝") >= 0 && info.needs.some((n) => STRICT_SEATS.indexOf(n) < 0);
 }
 
+function colorWord(c: string): string {
+  const t = c.trim();
+  if (!t) return "";
+  return t.slice(-1) === "色" ? t : t + "色";
+}
+
+function mutedSockColor(palette: string, jacketWord: string): string {
+  const parts = (palette || "").split("与").map((c) => c.trim()).filter((c) => c.length > 0 && !/白|黑/.test(c));
+  if (parts.length > 0) return colorWord(parts[0]);
+  if (jacketWord && !/白|黑/.test(jacketWord)) return colorWord(jacketWord);
+  return "浅灰色";
+}
+
+function rewriteWhiteSock(shoe: string, muted: string): string {
+  return shoe.replace(/配(米白色|纯白色|奶油白色|奶白色|象牙白色|白色)(针织)?(中筒袜|堆堆袜|厚袜)/g, (_m, _c, knit, kind) => "配" + muted + (knit || "") + kind + "，不要纯白抢眼");
+}
+
 function buildImage(v: Vals, jacket: number, faceRef: boolean): string {
   const J = JACKETS[jacket] || JACKETS[0];
   const pose = parsePose(v.pose[0] || "");
@@ -1125,13 +1142,16 @@ function buildImage(v: Vals, jacket: number, faceRef: boolean): string {
   const colorSubj = colorItems.slice(0, -1).join("、") + "与" + colorItems[colorItems.length - 1];
   const tieNow = (v.inner[0] || "").indexOf("领带") >= 0;
   const sockNoun = tieNow || Math.floor(hs / 7) % 2 === 0 ? "及膝高筒袜" : "堆堆袜";
-  const palCols = (v.palette[0] || "").split("与").filter((c) => c.indexOf("黑") < 0);
-  const sockCol = palCols.length > 0 ? palCols[0] : J.word;
-  const sockOnAccent = lowShoe && accent !== "";
+  const muted = mutedSockColor(v.palette[0] || "", J.word);
+  const hasSock = shoe0.indexOf("袜") >= 0;
   const legwarm = skirt && shoe0.indexOf("腿套") >= 0;
-  const sockT = legwarm ? "，腿套为" + (sockOnAccent ? accent : sockCol + (sockCol.slice(-1) === "色" ? "" : "色")) + (sockOnAccent ? "，是全身唯一的小面积撞色点缀" : "") : lowShoe ? "，搭配" + (sockOnAccent ? accent : sockCol + (sockCol.slice(-1) === "色" ? "" : "色")) + sockNoun + (sockOnAccent ? "，是全身唯一的小面积撞色点缀" : "") : "";
+  const blackShoe = shoe0.indexOf("黑") >= 0;
+  const sockOnAccent = !hasSock && lowShoe && !legwarm && accent !== "" && !blackShoe;
+  let shoeCore = rewriteWhiteSock(shoe0, muted);
+  if (shoe0.indexOf("黑") >= 0 && shoe0.indexOf("白") >= 0) shoeCore += "，鞋底浅色不要过于跳，不要再配纯白袜，避免黑白强对比";
+  const sockT = hasSock ? "" : legwarm ? "，腿套为" + muted + "，腿套内不要再露出白袜" : lowShoe ? "，搭配" + muted + sockNoun + "，只穿一层袜子，不要再叠白袜，袜子低对比不要纯白抢眼" : "";
   const hatAcc = !sockOnAccent && accent !== "" && v.acc.some((x) => /帽|头巾/.test(x)) ? "；帽子上带一处" + accent + "的小面积撞色点缀" : "";
-  const shoe = shoe0 + sockT;
+  const shoe = shoeCore + sockT;
   const accList = skirt ? v.acc : v.acc.filter((x) => x.indexOf("腿环") < 0);
   const accText = (accList.length > 0 ? accList : ["一副细框眼镜"]).join("；") + hatAcc;
   const legT = "";
@@ -1140,13 +1160,13 @@ function buildImage(v: Vals, jacket: number, faceRef: boolean): string {
   const faceText = faceRef ? "韩国女大学生，保留参考图五官，真实皮肤与自然神态，不要美颜感，" : "韩国女大学生，" + (v.face[0] || "") + "，";
   const lines: string[] = [];
   if (faceRef) lines.push("脸参考图3");
-  lines.push("9:16竖版，单人完整全身街拍，构图宽松不要顶天立地，头顶上方留出约画面高度20%的空白，头发、发饰和马尾完整入镜且不贴上沿，双脚与鞋履完整入镜，脚下略留地面，相机" + v.camera[0] + "，" + "21岁" + faceText + "大长腿，头小颈长，头身比正常、头部偏小不夸张，禁止头大身小或大头娃娃比例，肩宽与头宽比例自然，腿部修长，四肢关节自然不变形，保留皮肤纹理，" + (v.makeup[0] || "韩系淡妆") + "。姿态松弛，" + poseT + "。");
+  lines.push("9:16竖版，单人完整全身街拍，构图宽松不要顶天立地，头顶上方留出约画面高度20%的空白，头发、发饰和马尾完整入镜且不贴上沿，双脚与鞋履完整入镜，脚下略留地面，相机" + v.camera[0] + "，" + "21岁" + faceText + "大长腿，头小颈长，头身比正常、头部偏小不夸张，禁止头大身小或大头娃娃比例，身材比例正常，头、肩、躯干和腿的长度协调，腿长占身长比例高，从胯到脚踝明显长于上身，不要腿短身长或小腿偏短；戴帽时头与帽子的整体体积不要过大，不要头重身轻，肩宽与头宽比例自然，腿部修长，四肢关节自然不变形，保留皮肤纹理，" + (v.makeup[0] || "韩系淡妆") + "。姿态松弛，" + poseT + "。没拿东西的那只手手指微曲、手腕放松，不要僵直垂在身侧。");
   lines.push("羽绒服严格参考原图：" + jacketPrompt(J));
   const contrastNote =
     /米白/.test(J.word) && /黑|深灰|藏青|深棕|咖啡/.test(v.palette[0] || "")
       ? "，下装取配色中的深色，与米白外套拉开明度"
       : "";
-  lines.push("穿搭：韩系甜酷小性感，修身高腰显腿长。配色：" + J.word + "为主，搭配" + v.palette[0] + "，其余单品只用这两种色" + contrastNote + (neutral ? "，" + neutral + "不计入" : "") + (redWhat ? "；" + redWhat + "是全身唯一的小面积撞色点缀" : "") + "。" + outfit + "；脚穿" + shoe + "；配饰：" + accText + "。" + body + "。领口不低于锁骨下方，不露乳沟" + (skirt && pose.kind === "坐" ? (bottom.indexOf("裙") >= 0 ? "，坐姿裙摆盖住大腿，不走光" : "，坐姿双腿并拢或交叠，不走光") : "") + "。");
+  lines.push("穿搭：韩系甜酷小性感，修身高腰显腿长。配色：" + J.word + "为主，搭配" + v.palette[0] + "，其余单品只用这两种色" + contrastNote + (neutral ? "，" + neutral + "不计入" : "") + (redWhat ? "；" + redWhat + "是全身唯一的小面积撞色点缀" : "") + "。" + outfit + "；脚穿" + shoe + "；配饰：" + accText + "。" + body + "。领口不低于锁骨下方，不露乳沟" + (skirt && pose.kind === "坐" ? (bottom.indexOf("裙") >= 0 ? "，坐姿裙摆盖住大腿，不走光" : "，坐姿双腿并拢或交叠，不走光") : "") + "。鞋袜只穿一层，不要堆堆袜再配白袜；袜子低对比，不要纯白厚袜抢眼；黑鞋不要配白袜或过于跳的白厚底，避免黑白强对比发土。腿长占身长比例高，厚底鞋或长裙阔腿时仍要看出腿长。");
   lines.push("背景：" + v.scene[0] + "。" + seatAdd + (stance ? stance + "，" : "") + "无人群、无绿植、无可读文字。背景简洁虚化不抢主体，主体羽绒服清晰锐利，背景色偏中性低对比。");
   const light0 = lightText(v);
   if (CREAM_RE.test(light0)) {
@@ -1382,7 +1402,7 @@ const POOL_LEGACY3 = "kr-down-pools-v10";
 const HIST_KEY = "kr-down-history-v8";
 const PREF_KEY = "kr-down-prefs-v3";
 const PREF_LEGACY = "kr-down-prefs-v2";
-const PAGE_VER = "v27 · 2026-11-10"; // 视频空闲手去僵硬
+const PAGE_VER = "v28 · 2026-11-10"; // 出图：空闲手、腿长与身材、头帽体积、鞋袜一层且不抢眼
 const V11_MERGE: Partial<Record<PoolKey, string[]>> = {
   face: ["小圆脸，双眼皮圆眼，深棕色双低马尾辫，耳边有细碎发丝"],
   bottom: [
