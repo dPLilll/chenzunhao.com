@@ -83,19 +83,11 @@ const DEFAULT_POOLS: Pools = {
     "【坐/长凳】坐在{座}，双腿自然向前放，上身放松，看向镜头｜保持坐姿，看向镜头，嘴角微扬",
   ],
   face: [
-    "圆润鹅蛋脸，双眼皮圆眼，茶棕色慵懒大波浪长发，脸侧有细碎发丝",
     "小巧瓜子脸，清澈内双大眼，栗棕色大波浪长卷发，配轻薄空气刘海",
-    "小圆脸，无辜圆眼睛，亚麻茶棕色大波浪长发，两侧有细碎鬓发",
     "小脸，微上扬的猫系双眼皮，焦糖茶棕色慵懒长卷发，额前有碎发",
-    "清秀鹅蛋脸，笑起来有卧蚕的月牙眼，栗棕色大波浪长发，一侧别在耳后",
-    "偏圆小脸，自然内双杏仁眼，深茶棕色长波浪卷发配外八字刘海",
     "秀气心形脸，眼尾微垂的无辜眼，浅茶棕色大波浪长发，脸侧有碎发",
-    "鹅蛋脸，带一点酷感的内双眼，深栗棕色大波浪长卷发配外八字刘海",
     "小脸，大而有神的眼睛，黑棕色小羊卷中长发，额前有碎发",
-    "小圆脸，双眼皮杏眼，奶茶棕色中长发半扎，两侧有碎发",
-    "小巧鹅蛋脸，卧蚕笑眼，深棕色中长直发配公主切",
     "小巧瓜子脸，单眼皮微上扬，黑色及肩短发配齐刘海",
-    "小圆脸，双眼皮圆眼，深棕色双低马尾辫，耳边有细碎发丝",
   ],
   makeup: [
     "韩系淡妆，眉毛自然修整，眼妆清淡，唇色接近本色",
@@ -1402,9 +1394,8 @@ const POOL_LEGACY3 = "kr-down-pools-v10";
 const HIST_KEY = "kr-down-history-v8";
 const PREF_KEY = "kr-down-prefs-v3";
 const PREF_LEGACY = "kr-down-prefs-v2";
-const PAGE_VER = "v28 · 2026-11-10"; // 出图：空闲手、腿长与身材、头帽体积、鞋袜一层且不抢眼
+const PAGE_VER = "v29 · 2026-11-10"; // 删除鹅蛋脸、圆脸类长相
 const V11_MERGE: Partial<Record<PoolKey, string[]>> = {
-  face: ["小圆脸，双眼皮圆眼，深棕色双低马尾辫，耳边有细碎发丝"],
   bottom: [
     "深棕色宽松阔腿裤，裤脚拖到脚面",
     "蓝色做旧直筒牛仔裤，裤长到鞋面",
@@ -1786,6 +1777,12 @@ function loadPools(): Pools {
         arr = arr.filter((s) => s.indexOf("紧身裤") < 0);
         if (arr.length < nb) migrated = true;
         if (arr.length === 0) arr = DEFAULT_POOLS.bottom.slice();
+      }
+      if (k === "face") {
+        const nf = arr.length;
+        arr = arr.filter((s) => !/鹅蛋脸|小圆脸|偏圆小脸|圆脸|娃娃脸/.test(s));
+        if (arr.length < nf) poolMerged = true;
+        if (arr.length === 0) arr = DEFAULT_POOLS.face.slice();
       }
       if (k === "scene") {
         const nb = arr.length;
