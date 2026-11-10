@@ -58,7 +58,7 @@ const DEFAULT_POOLS: Pools = {
     "【坐/长凳、台阶、楼梯】坐在{座}，身体微侧，一只手撑在身后，另一只手自然搭在膝上，双腿并拢，笑着看向镜头｜听到朋友说了句什么，笑着转头看向镜头，嘴角微扬",
     "【靠/栏杆】双肘轻搭在{座}，身体微侧，转头看镜头、嘴角微扬｜先看向远处，再侧头看向镜头，随后直起身迈出步子",
     "单手举着手机在身前自拍，目光看向手机屏幕，自然带笑｜保持自拍的姿态，随后放下手机，转头看向镜头，嘴角微扬",
-    "一手端着一杯热咖啡在腰侧，低头抿一口，再抬眼看镜头，另一只手自然垂放｜先低头抿一口咖啡，再抬眼看向镜头，笑意浅浅",
+    "一手拿着纸杯咖啡在腰侧，不要杯托和托碟，低头抿一口，再抬眼看镜头，另一只手自然垂放｜先低头抿一口咖啡，再抬眼看向镜头，笑意浅浅",
     "一手拿着冰淇淋甜筒，刚咬了一口，手肘微收，眼睛看向镜头｜低头又吃了一口冰淇淋，随后笑着看向镜头",
     "双手自然垂在身侧，身体微微后倾，被朋友逗笑了，笑着看向镜头｜笑着摇了摇头，随后迈出步子，转头看向镜头",
     "一只手轻掩在嘴边，像刚听完朋友的玩笑，忍不住笑，身体微侧，看向镜头，另一只手自然垂放｜手放下来，轻轻一笑，随后迈出步子，转头看向镜头",
@@ -73,9 +73,9 @@ const DEFAULT_POOLS: Pools = {
     "【坐/无/开】坐在地面上，一条腿屈起，上身放松，看向镜头｜保持坐姿，看向镜头，嘴角微扬",
     "【坐/长凳、台阶、矮墙】坐在{座}，低头看手机，神情放松｜先低头看手机，再抬眼看向镜头，嘴角微扬",
     "一只手抬起抚头发，微笑看向镜头，另一只手自然垂放｜指尖把发丝拨到耳后，随后看向镜头，嘴角微扬",
-    "走在路上，一手端着咖啡杯和托碟，身体微侧，目光看向斜前方｜继续向前走，随后侧头看向镜头，嘴角微扬",
+    "走在路上，一手拿着纸杯咖啡，不要杯托和托碟，身体微侧，目光看向斜前方｜继续向前走，随后侧头看向镜头，嘴角微扬",
     "双手插在衣兜里，身体微侧，目光看向一侧｜保持双手插兜，随后侧头看向镜头，嘴角微扬",
-    "【靠/矮墙】一只手扶着{座}，手里拿着咖啡杯，身体微侧，看向镜头｜保持倚靠的姿态，看向镜头，嘴角微扬",
+    "【靠/矮墙】一只手扶着{座}，手里拿着纸杯咖啡，不要杯托和托碟，身体微侧，看向镜头｜保持倚靠的姿态，看向镜头，嘴角微扬",
     "双手插在衣兜里，身体正对镜头，看向镜头｜保持双手插兜，看向镜头，嘴角微扬",
     "【坐/矮墙、长凳】坐在{座}，一只手撑在身侧，另一只手举着手机，看向镜头｜保持坐姿，看向镜头，嘴角微扬",
     "【坐/床】单膝跪在{座}，双手插在衣兜里，看向镜头｜保持跪坐的姿态，看向镜头，嘴角微扬",
@@ -225,6 +225,7 @@ const DEFAULT_POOLS: Pools = {
     "黑色低帮板鞋，白色厚底",
     "深棕色勃肯软木包头拖鞋，皮带扣，配米白色针织堆堆袜",
     "黑色圆头厚底德比鞋，米白色厚底",
+    "米杏色磨砂靴，靴筒向下翻折堆在小腿，脚踝处有浅棕皮带扣，配白色粗针织堆堆袜，靴口上方露出大截袜筒",
   ],
   palette: [],
   pal0: [
@@ -1138,8 +1139,9 @@ function buildImage(v: Vals, jacket: number, faceRef: boolean): string {
   const hasSock = shoe0.indexOf("袜") >= 0;
   const legwarm = skirt && shoe0.indexOf("腿套") >= 0;
   const blackShoe = shoe0.indexOf("黑") >= 0;
+  const foldBoot = /配白色粗针织堆堆袜/.test(shoe0);
   const sockOnAccent = !hasSock && lowShoe && !legwarm && accent !== "" && !blackShoe;
-  let shoeCore = rewriteWhiteSock(shoe0, muted);
+  let shoeCore = foldBoot ? shoe0 : rewriteWhiteSock(shoe0, muted);
   if (shoe0.indexOf("黑") >= 0 && shoe0.indexOf("白") >= 0) shoeCore += "，鞋底浅色不要过于跳，不要再配纯白袜，避免黑白强对比";
   const sockT = hasSock ? "" : legwarm ? "，腿套为" + muted + "，腿套内不要再露出白袜" : lowShoe ? "，搭配" + muted + sockNoun + "，只穿一层袜子，不要再叠白袜，袜子低对比不要纯白抢眼" : "";
   const hatAcc = !sockOnAccent && accent !== "" && v.acc.some((x) => /帽|头巾/.test(x)) ? "；帽子上带一处" + accent + "的小面积撞色点缀" : "";
@@ -1158,7 +1160,10 @@ function buildImage(v: Vals, jacket: number, faceRef: boolean): string {
     /米白/.test(J.word) && /黑|深灰|藏青|深棕|咖啡/.test(v.palette[0] || "")
       ? "，下装取配色中的深色，与米白外套拉开明度"
       : "";
-  lines.push("穿搭：韩系甜酷小性感，修身高腰显腿长。配色：" + J.word + "为主，搭配" + v.palette[0] + "，其余单品只用这两种色" + contrastNote + (neutral ? "，" + neutral + "不计入" : "") + (redWhat ? "；" + redWhat + "是全身唯一的小面积撞色点缀" : "") + "。" + outfit + "；脚穿" + shoe + "；配饰：" + accText + "。" + body + "。领口不低于锁骨下方，不露乳沟" + (skirt && pose.kind === "坐" ? (bottom.indexOf("裙") >= 0 ? "，坐姿裙摆盖住大腿，不走光" : "，坐姿双腿并拢或交叠，不走光") : "") + "。鞋袜只穿一层，不要堆堆袜再配白袜；袜子低对比，不要纯白厚袜抢眼；黑鞋不要配白袜或过于跳的白厚底，避免黑白强对比发土。腿长占身长比例高，厚底鞋或长裙阔腿时仍要看出腿长。");
+  const sockRule = foldBoot
+    ? "鞋袜只穿一层，袜子就用白色粗针织堆堆袜，从翻折靴口堆到裙摆或裤脚下方，不要再套一层袜或腿套，不要把靴筒拉直成高筒。"
+    : "鞋袜只穿一层，不要堆堆袜再配白袜；袜子低对比，不要纯白厚袜抢眼；黑鞋不要配白袜或过于跳的白厚底，避免黑白强对比发土。腿长占身长比例高，厚底鞋或长裙阔腿时仍要看出腿长。";
+  lines.push("穿搭：韩系甜酷小性感，修身高腰显腿长。配色：" + J.word + "为主，搭配" + v.palette[0] + "，其余单品只用这两种色" + contrastNote + (neutral ? "，" + neutral + "不计入" : "") + (redWhat ? "；" + redWhat + "是全身唯一的小面积撞色点缀" : "") + "。" + outfit + "；脚穿" + shoe + "；配饰：" + accText + "。" + body + "。领口不低于锁骨下方，不露乳沟" + (skirt && pose.kind === "坐" ? (bottom.indexOf("裙") >= 0 ? "，坐姿裙摆盖住大腿，不走光" : "，坐姿双腿并拢或交叠，不走光") : "") + "。" + sockRule);
   lines.push("背景：" + v.scene[0] + "。" + seatAdd + (stance ? stance + "，" : "") + "无人群、无绿植、无可读文字。背景简洁虚化不抢主体，主体羽绒服清晰锐利，背景色偏中性低对比。");
   const light0 = lightText(v);
   if (CREAM_RE.test(light0)) {
@@ -1394,7 +1399,7 @@ const POOL_LEGACY3 = "kr-down-pools-v10";
 const HIST_KEY = "kr-down-history-v8";
 const PREF_KEY = "kr-down-prefs-v3";
 const PREF_LEGACY = "kr-down-prefs-v2";
-const PAGE_VER = "v29 · 2026-11-10"; // 删除鹅蛋脸、圆脸类长相
+const PAGE_VER = "v31 · 2026-11-10"; // 翻折靴配白色堆堆袜
 const V11_MERGE: Partial<Record<PoolKey, string[]>> = {
   bottom: [
     "深棕色宽松阔腿裤，裤脚拖到脚面",
@@ -1462,7 +1467,7 @@ const V22_MERGE: Partial<Record<PoolKey, string[]>> = {
     "【坐/无/开】坐在地面上，一条腿屈起，上身放松，看向镜头｜保持坐姿，看向镜头，嘴角微扬",
     "【坐/长凳、台阶、矮墙】坐在{座}，低头看手机，神情放松｜先低头看手机，再抬眼看向镜头，嘴角微扬",
     "一只手抬起抚头发，微笑看向镜头，另一只手自然垂放｜指尖把发丝拨到耳后，随后看向镜头，嘴角微扬",
-    "走在路上，一手端着咖啡杯和托碟，身体微侧，目光看向斜前方｜继续向前走，随后侧头看向镜头，嘴角微扬",
+    "走在路上，一手拿着纸杯咖啡，不要杯托和托碟，身体微侧，目光看向斜前方｜继续向前走，随后侧头看向镜头，嘴角微扬",
   ],
   bottom: [
     "深蓝灰高腰阔腿牛仔裤，裤脚拖到脚面",
@@ -1517,7 +1522,7 @@ const V22_MERGE: Partial<Record<PoolKey, string[]>> = {
 const V23_MERGE: Partial<Record<PoolKey, string[]>> = {
   pose: [
     "双手插在衣兜里，身体微侧，目光看向一侧｜保持双手插兜，随后侧头看向镜头，嘴角微扬",
-    "【靠/矮墙】一只手扶着{座}，手里拿着咖啡杯，身体微侧，看向镜头｜保持倚靠的姿态，看向镜头，嘴角微扬",
+    "【靠/矮墙】一只手扶着{座}，手里拿着纸杯咖啡，不要杯托和托碟，身体微侧，看向镜头｜保持倚靠的姿态，看向镜头，嘴角微扬",
     "双手插在衣兜里，身体正对镜头，看向镜头｜保持双手插兜，看向镜头，嘴角微扬",
     "【坐/矮墙、长凳】坐在{座}，一只手撑在身侧，另一只手举着手机，看向镜头｜保持坐姿，看向镜头，嘴角微扬",
     "【坐/床】单膝跪在{座}，双手插在衣兜里，看向镜头｜保持跪坐的姿态，看向镜头，嘴角微扬",
@@ -1567,6 +1572,9 @@ const V23_MERGE: Partial<Record<PoolKey, string[]>> = {
     "室内旅店客房，原木色边柜与台灯，旁边有浅色沙发浅景深虚化",
     "红砖墙外人行道，原木色长凳浅景深虚化",
   ],
+};
+const V31_MERGE: Partial<Record<PoolKey, string[]>> = {
+  shoe: ["米杏色磨砂靴，靴筒向下翻折堆在小腿，脚踝处有浅棕皮带扣，配白色粗针织堆堆袜，靴口上方露出大截袜筒"],
 };
 const V24_MERGE: Partial<Record<PoolKey, string[]>> = {
   makeup: [
@@ -1713,6 +1721,12 @@ const LEGACY_EXACT: [string, string][] = [
   ["A字毛呢半裙", "A字毛呢中裙"],
   ["灯芯绒A字裙", "灯芯绒A字中裙"],
   ["裙长刚到膝盖", "裙长刚过膝盖"],
+  ["走在路上，一手端着咖啡杯和托碟，身体微侧，目光看向斜前方｜继续向前走，随后侧头看向镜头，嘴角微扬", "走在路上，一手拿着纸杯咖啡，不要杯托和托碟，身体微侧，目光看向斜前方｜继续向前走，随后侧头看向镜头，嘴角微扬"],
+  ["【靠/矮墙】一只手扶着{座}，手里拿着咖啡杯，身体微侧，看向镜头｜保持倚靠的姿态，看向镜头，嘴角微扬", "【靠/矮墙】一只手扶着{座}，手里拿着纸杯咖啡，不要杯托和托碟，身体微侧，看向镜头｜保持倚靠的姿态，看向镜头，嘴角微扬"],
+  ["一手端着一杯热咖啡在腰侧，低头抿一口，再抬眼看镜头，另一只手自然垂放｜先低头抿一口咖啡，再抬眼看向镜头，笑意浅浅", "一手拿着纸杯咖啡在腰侧，不要杯托和托碟，低头抿一口，再抬眼看镜头，另一只手自然垂放｜先低头抿一口咖啡，再抬眼看向镜头，笑意浅浅"],
+  ["手里拿着咖啡杯", "手里拿着纸杯咖啡，不要杯托和托碟"],
+  ["一手端着一杯热咖啡在腰侧", "一手拿着纸杯咖啡在腰侧，不要杯托和托碟"],
+  ["咖啡杯和托碟", "纸杯咖啡，不要杯托和托碟"],
 ];
 
 function fixExact(arr: string[]): string[] {
@@ -1750,6 +1764,7 @@ function loadPools(): Pools {
       let arr = k === "scene" || k === "light" ? fixExact(fixLegacy(s as string[])) : k === "pose" ? fixExact(fixLegacyPose(s as string[])) : fixExact(s as string[]);
       if (k === "pose") {
         const np = arr.length;
+        if ((s as string[]).some((p) => p.indexOf("咖啡杯和托碟") >= 0 || p.indexOf("手里拿着咖啡杯") >= 0 || p.indexOf("一手端着一杯热咖啡在腰侧") >= 0)) poolMerged = true;
         arr = fixLegacyPose(arr);
         if (arr.length < np) migrated = true;
         if (arr.length === 0) arr = DEFAULT_POOLS.pose.slice();
@@ -1799,6 +1814,8 @@ function loadPools(): Pools {
       if (add23) for (const x of add23) if (arr.indexOf(x) < 0) { arr.push(x); poolMerged = true; }
       const add24 = V24_MERGE[k];
       if (add24) for (const x of add24) if (arr.indexOf(x) < 0) { arr.push(x); poolMerged = true; }
+      const add31 = V31_MERGE[k];
+      if (add31) for (const x of add31) if (arr.indexOf(x) < 0) { arr.push(x); poolMerged = true; }
       out[k] = arr;
     } else out[k] = DEFAULT_POOLS[k].slice();
   }
