@@ -148,7 +148,7 @@ const DEFAULT_POOLS: Pools = {
     "黑色宽松阔腿卫裤，裤脚拖到脚面",
     "浅粉色宽松阔腿卫裤，裤脚拖到脚面",
     "浅灰色宽松阔腿卫裤，裤脚拖到脚面",
-    "高腰绿棕红格纹花苞中长裙，裙长过膝近小腿中段",
+    "高腰绿棕红格纹花苞中长裙，格纹为绿色、棕色与红色，裙身中段鼓起、下摆收口呈花苞形，裙长过膝近小腿中段",
     "高腰深灰色百褶短裙，裙长到大腿中部",
     "高腰黑色波点短裙，米色圆点，下摆有黑白条纹织边，裙长到大腿中部",
     "米白色高腰阔腿裤，裤脚拖到脚面",
@@ -219,7 +219,7 @@ const DEFAULT_POOLS: Pools = {
     "黑色带扣短靴",
     "黑色厚底运动鞋",
     "奶油色厚底毛毛雪地靴",
-    "棕色圆头浅口绑带鞋，米白色交叉鞋带，配橄榄绿中筒袜",
+    "棕色圆头浅口绑带鞋，鞋面上有米白色交叉鞋带，配贴腿的橄榄绿中筒袜，袜筒到小腿中段，不要堆成堆堆袜",
     "米杏色磨砂高筒靴，深棕色皮带扣，配白色堆堆袜",
     "黑色厚底毛毛雪地靴，靴筒上有银色铆钉装饰，配白色堆堆袜",
     "黑色低帮板鞋，白色厚底",
@@ -321,6 +321,7 @@ const DEFAULT_POOLS: Pools = {
     "一副白色耳罩，戴在耳朵上，不遮挡眼睛",
     "一只浅蓝色大号托特包，挎在肩侧，包上挂着一个白色毛球挂件",
     "一顶驼色报童帽，露出刘海与鬓发，不遮挡眼睛",
+    "一顶驼色报童帽，帽檐短而平整，头发向后梳或盘在脑后，帽檐下不露刘海，不遮挡眼睛",
     "两枚银色发夹，别在一侧头发上",
     "一只黑色猫咪造型毛绒包，放在身旁或挎在肩侧",
     "一顶黑白条纹针织冷帽，露出刘海与鬓发，不遮挡眼睛",
@@ -1399,7 +1400,7 @@ const POOL_LEGACY3 = "kr-down-pools-v10";
 const HIST_KEY = "kr-down-history-v8";
 const PREF_KEY = "kr-down-prefs-v3";
 const PREF_LEGACY = "kr-down-prefs-v2";
-const PAGE_VER = "v31 · 2026-11-10"; // 翻折靴配白色堆堆袜
+const PAGE_VER = "v32 · 2026-11-10"; // 花苞裙绑带鞋与盘发报童帽
 const V11_MERGE: Partial<Record<PoolKey, string[]>> = {
   bottom: [
     "深棕色宽松阔腿裤，裤脚拖到脚面",
@@ -1530,7 +1531,7 @@ const V23_MERGE: Partial<Record<PoolKey, string[]>> = {
     "【坐/长凳】坐在{座}，双腿自然向前放，上身放松，看向镜头｜保持坐姿，看向镜头，嘴角微扬",
   ],
   bottom: [
-    "高腰绿棕红格纹花苞中长裙，裙长过膝近小腿中段",
+    "高腰绿棕红格纹花苞中长裙，格纹为绿色、棕色与红色，裙身中段鼓起、下摆收口呈花苞形，裙长过膝近小腿中段",
     "高腰深灰色百褶短裙，裙长到大腿中部",
     "高腰黑色波点短裙，米色圆点，下摆有黑白条纹织边，裙长到大腿中部",
     "米白色高腰阔腿裤，裤脚拖到脚面",
@@ -1546,7 +1547,7 @@ const V23_MERGE: Partial<Record<PoolKey, string[]>> = {
     "黑色短款圆领T恤，领口在锁骨上方",
   ],
   shoe: [
-    "棕色圆头浅口绑带鞋，米白色交叉鞋带，配橄榄绿中筒袜",
+    "棕色圆头浅口绑带鞋，鞋面上有米白色交叉鞋带，配贴腿的橄榄绿中筒袜，袜筒到小腿中段，不要堆成堆堆袜",
     "米杏色磨砂高筒靴，深棕色皮带扣，配白色堆堆袜",
     "黑色厚底毛毛雪地靴，靴筒上有银色铆钉装饰，配白色堆堆袜",
     "黑色低帮板鞋，白色厚底",
@@ -1575,6 +1576,9 @@ const V23_MERGE: Partial<Record<PoolKey, string[]>> = {
 };
 const V31_MERGE: Partial<Record<PoolKey, string[]>> = {
   shoe: ["米杏色磨砂靴，靴筒向下翻折堆在小腿，脚踝处有浅棕皮带扣，配白色粗针织堆堆袜，靴口上方露出大截袜筒"],
+};
+const V32_MERGE: Partial<Record<PoolKey, string[]>> = {
+  acc: ["一顶驼色报童帽，帽檐短而平整，头发向后梳或盘在脑后，帽檐下不露刘海，不遮挡眼睛"],
 };
 const V24_MERGE: Partial<Record<PoolKey, string[]>> = {
   makeup: [
@@ -1727,6 +1731,8 @@ const LEGACY_EXACT: [string, string][] = [
   ["手里拿着咖啡杯", "手里拿着纸杯咖啡，不要杯托和托碟"],
   ["一手端着一杯热咖啡在腰侧", "一手拿着纸杯咖啡在腰侧，不要杯托和托碟"],
   ["咖啡杯和托碟", "纸杯咖啡，不要杯托和托碟"],
+  ["高腰绿棕红格纹花苞中长裙，裙长过膝近小腿中段", "高腰绿棕红格纹花苞中长裙，格纹为绿色、棕色与红色，裙身中段鼓起、下摆收口呈花苞形，裙长过膝近小腿中段"],
+  ["棕色圆头浅口绑带鞋，米白色交叉鞋带，配橄榄绿中筒袜", "棕色圆头浅口绑带鞋，鞋面上有米白色交叉鞋带，配贴腿的橄榄绿中筒袜，袜筒到小腿中段，不要堆成堆堆袜"],
 ];
 
 function fixExact(arr: string[]): string[] {
@@ -1789,10 +1795,12 @@ function loadPools(): Pools {
       }
       if (k === "bottom") {
         const nb = arr.length;
+        if ((s as string[]).some((p) => p.indexOf("高腰绿棕红格纹花苞中长裙，裙长过膝近小腿中段") >= 0)) poolMerged = true;
         arr = arr.filter((s) => s.indexOf("紧身裤") < 0);
         if (arr.length < nb) migrated = true;
         if (arr.length === 0) arr = DEFAULT_POOLS.bottom.slice();
       }
+      if (k === "shoe" && (s as string[]).some((p) => p.indexOf("棕色圆头浅口绑带鞋，米白色交叉鞋带，配橄榄绿中筒袜") >= 0)) poolMerged = true;
       if (k === "face") {
         const nf = arr.length;
         arr = arr.filter((s) => !/鹅蛋脸|小圆脸|偏圆小脸|圆脸|娃娃脸/.test(s));
@@ -1816,6 +1824,8 @@ function loadPools(): Pools {
       if (add24) for (const x of add24) if (arr.indexOf(x) < 0) { arr.push(x); poolMerged = true; }
       const add31 = V31_MERGE[k];
       if (add31) for (const x of add31) if (arr.indexOf(x) < 0) { arr.push(x); poolMerged = true; }
+      const add32 = V32_MERGE[k];
+      if (add32) for (const x of add32) if (arr.indexOf(x) < 0) { arr.push(x); poolMerged = true; }
       out[k] = arr;
     } else out[k] = DEFAULT_POOLS[k].slice();
   }
