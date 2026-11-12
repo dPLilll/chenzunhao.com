@@ -58,7 +58,7 @@ const DEFAULT_POOLS: Pools = {
     "【坐/长凳、台阶、楼梯】坐在{座}，身体微侧，一只手撑在身后，另一只手自然搭在膝上，双腿并拢，笑着看向镜头｜听到朋友说了句什么，笑着转头看向镜头，嘴角微扬",
     "【靠/栏杆】双肘轻搭在{座}，身体微侧，转头看镜头、嘴角微扬｜先看向远处，再侧头看向镜头，随后直起身迈出步子",
     "单手举着手机在身前自拍，目光看向手机屏幕，自然带笑｜保持自拍的姿态，随后放下手机，转头看向镜头，嘴角微扬",
-    "一手端着一杯热咖啡在腰侧，低头抿一口，再抬眼看镜头，另一只手自然垂放｜先低头抿一口咖啡，再抬眼看向镜头，笑意浅浅",
+    "一手拿着纸杯咖啡在腰侧，不要杯托和托碟，低头抿一口，再抬眼看镜头，另一只手自然垂放｜先低头抿一口咖啡，再抬眼看向镜头，笑意浅浅",
     "一手拿着冰淇淋甜筒，刚咬了一口，手肘微收，眼睛看向镜头｜低头又吃了一口冰淇淋，随后笑着看向镜头",
     "双手自然垂在身侧，身体微微后倾，被朋友逗笑了，笑着看向镜头｜笑着摇了摇头，随后迈出步子，转头看向镜头",
     "一只手轻掩在嘴边，像刚听完朋友的玩笑，忍不住笑，身体微侧，看向镜头，另一只手自然垂放｜手放下来，轻轻一笑，随后迈出步子，转头看向镜头",
@@ -73,9 +73,9 @@ const DEFAULT_POOLS: Pools = {
     "【坐/无/开】坐在地面上，一条腿屈起，上身放松，看向镜头｜保持坐姿，看向镜头，嘴角微扬",
     "【坐/长凳、台阶、矮墙】坐在{座}，低头看手机，神情放松｜先低头看手机，再抬眼看向镜头，嘴角微扬",
     "一只手抬起抚头发，微笑看向镜头，另一只手自然垂放｜指尖把发丝拨到耳后，随后看向镜头，嘴角微扬",
-    "走在路上，一手端着咖啡杯和托碟，身体微侧，目光看向斜前方｜继续向前走，随后侧头看向镜头，嘴角微扬",
+    "走在路上，一手拿着纸杯咖啡，不要杯托和托碟，身体微侧，目光看向斜前方｜继续向前走，随后侧头看向镜头，嘴角微扬",
     "双手插在衣兜里，身体微侧，目光看向一侧｜保持双手插兜，随后侧头看向镜头，嘴角微扬",
-    "【靠/矮墙】一只手扶着{座}，手里拿着咖啡杯，身体微侧，看向镜头｜保持倚靠的姿态，看向镜头，嘴角微扬",
+    "【靠/矮墙】一只手扶着{座}，手里拿着纸杯咖啡，不要杯托和托碟，身体微侧，看向镜头｜保持倚靠的姿态，看向镜头，嘴角微扬",
     "双手插在衣兜里，身体正对镜头，看向镜头｜保持双手插兜，看向镜头，嘴角微扬",
     "【坐/矮墙、长凳】坐在{座}，一只手撑在身侧，另一只手举着手机，看向镜头｜保持坐姿，看向镜头，嘴角微扬",
     "【坐/床】单膝跪在{座}，双手插在衣兜里，看向镜头｜保持跪坐的姿态，看向镜头，嘴角微扬",
@@ -83,19 +83,11 @@ const DEFAULT_POOLS: Pools = {
     "【坐/长凳】坐在{座}，双腿自然向前放，上身放松，看向镜头｜保持坐姿，看向镜头，嘴角微扬",
   ],
   face: [
-    "圆润鹅蛋脸，双眼皮圆眼，茶棕色慵懒大波浪长发，脸侧有细碎发丝",
     "小巧瓜子脸，清澈内双大眼，栗棕色大波浪长卷发，配轻薄空气刘海",
-    "小圆脸，无辜圆眼睛，亚麻茶棕色大波浪长发，两侧有细碎鬓发",
     "小脸，微上扬的猫系双眼皮，焦糖茶棕色慵懒长卷发，额前有碎发",
-    "清秀鹅蛋脸，笑起来有卧蚕的月牙眼，栗棕色大波浪长发，一侧别在耳后",
-    "偏圆小脸，自然内双杏仁眼，深茶棕色长波浪卷发配外八字刘海",
     "秀气心形脸，眼尾微垂的无辜眼，浅茶棕色大波浪长发，脸侧有碎发",
-    "鹅蛋脸，带一点酷感的内双眼，深栗棕色大波浪长卷发配外八字刘海",
     "小脸，大而有神的眼睛，黑棕色小羊卷中长发，额前有碎发",
-    "小圆脸，双眼皮杏眼，奶茶棕色中长发半扎，两侧有碎发",
-    "小巧鹅蛋脸，卧蚕笑眼，深棕色中长直发配公主切",
     "小巧瓜子脸，单眼皮微上扬，黑色及肩短发配齐刘海",
-    "小圆脸，双眼皮圆眼，深棕色双低马尾辫，耳边有细碎发丝",
   ],
   makeup: [
     "韩系淡妆，眉毛自然修整，眼妆清淡，唇色接近本色",
@@ -156,7 +148,7 @@ const DEFAULT_POOLS: Pools = {
     "黑色宽松阔腿卫裤，裤脚拖到脚面",
     "浅粉色宽松阔腿卫裤，裤脚拖到脚面",
     "浅灰色宽松阔腿卫裤，裤脚拖到脚面",
-    "高腰绿棕红格纹花苞中长裙，裙长过膝近小腿中段",
+    "高腰绿棕红格纹花苞中长裙，格纹为绿色、棕色与红色，裙身中段鼓起、下摆收口呈花苞形，裙长过膝近小腿中段",
     "高腰深灰色百褶短裙，裙长到大腿中部",
     "高腰黑色波点短裙，米色圆点，下摆有黑白条纹织边，裙长到大腿中部",
     "米白色高腰阔腿裤，裤脚拖到脚面",
@@ -227,12 +219,13 @@ const DEFAULT_POOLS: Pools = {
     "黑色带扣短靴",
     "黑色厚底运动鞋",
     "奶油色厚底毛毛雪地靴",
-    "棕色圆头浅口绑带鞋，米白色交叉鞋带，配橄榄绿中筒袜",
+    "棕色圆头浅口绑带鞋，鞋面上有米白色交叉鞋带，配贴腿的橄榄绿中筒袜，袜筒到小腿中段，不要堆成堆堆袜",
     "米杏色磨砂高筒靴，深棕色皮带扣，配白色堆堆袜",
     "黑色厚底毛毛雪地靴，靴筒上有银色铆钉装饰，配白色堆堆袜",
     "黑色低帮板鞋，白色厚底",
     "深棕色勃肯软木包头拖鞋，皮带扣，配米白色针织堆堆袜",
     "黑色圆头厚底德比鞋，米白色厚底",
+    "米杏色磨砂靴，靴筒向下翻折堆在小腿，脚踝处有浅棕皮带扣，配白色粗针织堆堆袜，靴口上方露出大截袜筒",
   ],
   palette: [],
   pal0: [
@@ -328,6 +321,7 @@ const DEFAULT_POOLS: Pools = {
     "一副白色耳罩，戴在耳朵上，不遮挡眼睛",
     "一只浅蓝色大号托特包，挎在肩侧，包上挂着一个白色毛球挂件",
     "一顶驼色报童帽，露出刘海与鬓发，不遮挡眼睛",
+    "一顶驼色报童帽，帽檐短而平整，头发向后梳或盘在脑后，帽檐下不露刘海，不遮挡眼睛",
     "两枚银色发夹，别在一侧头发上",
     "一只黑色猫咪造型毛绒包，放在身旁或挎在肩侧",
     "一顶黑白条纹针织冷帽，露出刘海与鬓发，不遮挡眼睛",
@@ -1089,6 +1083,23 @@ function poseOk(p: string, bottom: string, scene: string): boolean {
   return scene.indexOf("无缝") >= 0 && info.needs.some((n) => STRICT_SEATS.indexOf(n) < 0);
 }
 
+function colorWord(c: string): string {
+  const t = c.trim();
+  if (!t) return "";
+  return t.slice(-1) === "色" ? t : t + "色";
+}
+
+function mutedSockColor(palette: string, jacketWord: string): string {
+  const parts = (palette || "").split("与").map((c) => c.trim()).filter((c) => c.length > 0 && !/白|黑/.test(c));
+  if (parts.length > 0) return colorWord(parts[0]);
+  if (jacketWord && !/白|黑/.test(jacketWord)) return colorWord(jacketWord);
+  return "浅灰色";
+}
+
+function rewriteWhiteSock(shoe: string, muted: string): string {
+  return shoe.replace(/配(米白色|纯白色|奶油白色|奶白色|象牙白色|白色)(针织)?(中筒袜|堆堆袜|厚袜)/g, (_m, _c, knit, kind) => "配" + muted + (knit || "") + kind + "，不要纯白抢眼");
+}
+
 function buildImage(v: Vals, jacket: number, faceRef: boolean): string {
   const J = JACKETS[jacket] || JACKETS[0];
   const pose = parsePose(v.pose[0] || "");
@@ -1125,13 +1136,17 @@ function buildImage(v: Vals, jacket: number, faceRef: boolean): string {
   const colorSubj = colorItems.slice(0, -1).join("、") + "与" + colorItems[colorItems.length - 1];
   const tieNow = (v.inner[0] || "").indexOf("领带") >= 0;
   const sockNoun = tieNow || Math.floor(hs / 7) % 2 === 0 ? "及膝高筒袜" : "堆堆袜";
-  const palCols = (v.palette[0] || "").split("与").filter((c) => c.indexOf("黑") < 0);
-  const sockCol = palCols.length > 0 ? palCols[0] : J.word;
-  const sockOnAccent = lowShoe && accent !== "";
+  const muted = mutedSockColor(v.palette[0] || "", J.word);
+  const hasSock = shoe0.indexOf("袜") >= 0;
   const legwarm = skirt && shoe0.indexOf("腿套") >= 0;
-  const sockT = legwarm ? "，腿套为" + (sockOnAccent ? accent : sockCol + (sockCol.slice(-1) === "色" ? "" : "色")) + (sockOnAccent ? "，是全身唯一的小面积撞色点缀" : "") : lowShoe ? "，搭配" + (sockOnAccent ? accent : sockCol + (sockCol.slice(-1) === "色" ? "" : "色")) + sockNoun + (sockOnAccent ? "，是全身唯一的小面积撞色点缀" : "") : "";
+  const blackShoe = shoe0.indexOf("黑") >= 0;
+  const foldBoot = /配白色粗针织堆堆袜/.test(shoe0);
+  const sockOnAccent = !hasSock && lowShoe && !legwarm && accent !== "" && !blackShoe;
+  let shoeCore = foldBoot ? shoe0 : rewriteWhiteSock(shoe0, muted);
+  if (shoe0.indexOf("黑") >= 0 && shoe0.indexOf("白") >= 0) shoeCore += "，鞋底浅色不要过于跳，不要再配纯白袜，避免黑白强对比";
+  const sockT = hasSock ? "" : legwarm ? "，腿套为" + muted + "，腿套内不要再露出白袜" : lowShoe ? "，搭配" + muted + sockNoun + "，只穿一层袜子，不要再叠白袜，袜子低对比不要纯白抢眼" : "";
   const hatAcc = !sockOnAccent && accent !== "" && v.acc.some((x) => /帽|头巾/.test(x)) ? "；帽子上带一处" + accent + "的小面积撞色点缀" : "";
-  const shoe = shoe0 + sockT;
+  const shoe = shoeCore + sockT;
   const accList = skirt ? v.acc : v.acc.filter((x) => x.indexOf("腿环") < 0);
   const accText = (accList.length > 0 ? accList : ["一副细框眼镜"]).join("；") + hatAcc;
   const legT = "";
@@ -1140,13 +1155,16 @@ function buildImage(v: Vals, jacket: number, faceRef: boolean): string {
   const faceText = faceRef ? "韩国女大学生，保留参考图五官，真实皮肤与自然神态，不要美颜感，" : "韩国女大学生，" + (v.face[0] || "") + "，";
   const lines: string[] = [];
   if (faceRef) lines.push("脸参考图3");
-  lines.push("9:16竖版，单人完整全身街拍，构图宽松不要顶天立地，头顶上方留出约画面高度20%的空白，头发、发饰和马尾完整入镜且不贴上沿，双脚与鞋履完整入镜，脚下略留地面，相机" + v.camera[0] + "，" + "21岁" + faceText + "大长腿，头小颈长，头身比正常、头部偏小不夸张，禁止头大身小或大头娃娃比例，肩宽与头宽比例自然，腿部修长，四肢关节自然不变形，保留皮肤纹理，" + (v.makeup[0] || "韩系淡妆") + "。姿态松弛，" + poseT + "。");
+  lines.push("9:16竖版，单人完整全身街拍，构图宽松不要顶天立地，头顶上方留出约画面高度20%的空白，头发、发饰和马尾完整入镜且不贴上沿，双脚与鞋履完整入镜，脚下略留地面，相机" + v.camera[0] + "，" + "21岁" + faceText + "大长腿，头小颈长，头身比正常、头部偏小不夸张，禁止头大身小或大头娃娃比例，身材比例正常，头、肩、躯干和腿的长度协调，腿长占身长比例高，从胯到脚踝明显长于上身，不要腿短身长或小腿偏短；戴帽时头与帽子的整体体积不要过大，不要头重身轻，肩宽与头宽比例自然，腿部修长，四肢关节自然不变形，保留皮肤纹理，" + (v.makeup[0] || "韩系淡妆") + "。姿态松弛，" + poseT + "。没拿东西的那只手手指微曲、手腕放松，不要僵直垂在身侧。");
   lines.push("羽绒服严格参考原图：" + jacketPrompt(J));
   const contrastNote =
     /米白/.test(J.word) && /黑|深灰|藏青|深棕|咖啡/.test(v.palette[0] || "")
       ? "，下装取配色中的深色，与米白外套拉开明度"
       : "";
-  lines.push("穿搭：韩系甜酷小性感，修身高腰显腿长。配色：" + J.word + "为主，搭配" + v.palette[0] + "，其余单品只用这两种色" + contrastNote + (neutral ? "，" + neutral + "不计入" : "") + (redWhat ? "；" + redWhat + "是全身唯一的小面积撞色点缀" : "") + "。" + outfit + "；脚穿" + shoe + "；配饰：" + accText + "。" + body + "。领口不低于锁骨下方，不露乳沟" + (skirt && pose.kind === "坐" ? (bottom.indexOf("裙") >= 0 ? "，坐姿裙摆盖住大腿，不走光" : "，坐姿双腿并拢或交叠，不走光") : "") + "。");
+  const sockRule = foldBoot
+    ? "鞋袜只穿一层，袜子就用白色粗针织堆堆袜，从翻折靴口堆到裙摆或裤脚下方，不要再套一层袜或腿套，不要把靴筒拉直成高筒。"
+    : "鞋袜只穿一层，不要堆堆袜再配白袜；袜子低对比，不要纯白厚袜抢眼；黑鞋不要配白袜或过于跳的白厚底，避免黑白强对比发土。腿长占身长比例高，厚底鞋或长裙阔腿时仍要看出腿长。";
+  lines.push("穿搭：韩系甜酷小性感，修身高腰显腿长。配色：" + J.word + "为主，搭配" + v.palette[0] + "，其余单品只用这两种色" + contrastNote + (neutral ? "，" + neutral + "不计入" : "") + (redWhat ? "；" + redWhat + "是全身唯一的小面积撞色点缀" : "") + "。" + outfit + "；脚穿" + shoe + "；配饰：" + accText + "。" + body + "。领口不低于锁骨下方，不露乳沟" + (skirt && pose.kind === "坐" ? (bottom.indexOf("裙") >= 0 ? "，坐姿裙摆盖住大腿，不走光" : "，坐姿双腿并拢或交叠，不走光") : "") + "。" + sockRule);
   lines.push("背景：" + v.scene[0] + "。" + seatAdd + (stance ? stance + "，" : "") + "无人群、无绿植、无可读文字。背景简洁虚化不抢主体，主体羽绒服清晰锐利，背景色偏中性低对比。");
   const light0 = lightText(v);
   if (CREAM_RE.test(light0)) {
@@ -1272,7 +1290,7 @@ function buildVideo(v: Vals, tpl: number, music: string, jacket: number = 0): st
   const parts = [
     "以参考图为基础，人物、服装与场景保持不变，生成9秒、720p、9:16竖屏的韩系街拍短视频。人物像被朋友随手拍到，自信松弛，带一点小性感，动作连贯自然。" + move + "共" + shots.length + "个镜头，硬切，景别与机位如下：",
     lines.join("\n"),
-    "镜头带轻微手持感，随性的生活抓拍。" + "景深沿用手机主摄的自然效果，背景基本清晰，不要大光圈奶油虚化。" + (lightSent !== "" ? lightSent : (flash ? "沿用参考图的夜间相机直闪，闪光照亮人物，背景保持深色有层次，" : /汉江/.test(v.scene[0] || "") && /蓝调/.test(v.light[0] || "") ? "环境光沿用参考图的蓝调光线，对岸城市灯火与江边路灯的暖色光" : "环境光沿用参考图的光源方向与色调，" + (warm ? "暖色光线" : "光线")) + (flash ? "光线" : "") + "自然落在脸颊、发丝和衣服边缘，色彩饱满但真实，曝光自然不发白" + (flash ? "" : "，人物与环境光一致不补光" + (/蓝调/.test(v.light[0] || "") ? "，允许人物偏暗、有自然噪点" : "")) + (whiteNote(v, jacket) ? "，" + whiteNote(v, jacket) : "") + "，不要影棚布光感或滤镜感。") + elevAmb + "肤色与服装颜色真实，手部动作自然不僵硬，手指关节弯曲自然，握杯或持物时指尖贴合物体、手掌有承托感，不要假人式僵直或整只手贴死在杯壁上，服装结构稳定。" + LOGO_ORIENT + "。无对白、无旁白、无字幕、无水印。模特全程不说话、不哼唱、不发出笑声与呼吸呢喃等人声。",
+    "镜头带轻微手持感，随性的生活抓拍。" + "景深沿用手机主摄的自然效果，背景基本清晰，不要大光圈奶油虚化。" + (lightSent !== "" ? lightSent : (flash ? "沿用参考图的夜间相机直闪，闪光照亮人物，背景保持深色有层次，" : /汉江/.test(v.scene[0] || "") && /蓝调/.test(v.light[0] || "") ? "环境光沿用参考图的蓝调光线，对岸城市灯火与江边路灯的暖色光" : "环境光沿用参考图的光源方向与色调，" + (warm ? "暖色光线" : "光线")) + (flash ? "光线" : "") + "自然落在脸颊、发丝和衣服边缘，色彩饱满但真实，曝光自然不发白" + (flash ? "" : "，人物与环境光一致不补光" + (/蓝调/.test(v.light[0] || "") ? "，允许人物偏暗、有自然噪点" : "")) + (whiteNote(v, jacket) ? "，" + whiteNote(v, jacket) : "") + "，不要影棚布光感或滤镜感。") + elevAmb + "肤色与服装颜色真实，双手动作都自然不僵硬，手指关节弯曲自然；持物的那只手指尖分开贴合物体、手掌有承托感，不要整只手贴死在杯壁上；没拿东西的那只手不要僵直垂在身侧或整臂撑死在座位上，手指微曲、手腕放松，可自然搭在膝上、身侧或座位边，不要假人式僵直，服装结构稳定。" + LOGO_ORIENT + "。无对白、无旁白、无字幕、无水印。模特全程不说话、不哼唱、不发出笑声与呼吸呢喃等人声。",
   ];
   const mus = musicText(music);
   if (mus) parts.push(mus);
@@ -1359,7 +1377,7 @@ function videoFor(m: VidModel, v: Vals, tpl: number, music: string, jacket: numb
     ]);
     return [
       "【素材分工】@图片1作为首帧，定义女孩的长相、发型、服装与场景，全程保持一致。",
-      "【整体设定】9秒、720p、9:16竖屏韩系街拍短视频，多镜头硬切，画面带轻微手持感。女孩像被朋友随手拍到，自信松弛，带一点小性感，动作连贯自然。" + move.replace("不要全程静止", "全程保持动态") + pos + "面部和身体比例稳定，保持头小颈长、不头大身小；手部动作自然不僵硬，握物时手指分开贴合。画面不要字幕。",
+      "【整体设定】9秒、720p、9:16竖屏韩系街拍短视频，多镜头硬切，画面带轻微手持感。女孩像被朋友随手拍到，自信松弛，带一点小性感，动作连贯自然。" + move.replace("不要全程静止", "全程保持动态") + pos + "面部和身体比例稳定，保持头小颈长、不头大身小；双手动作自然不僵硬，持物时手指分开贴合，空闲的那只手手指微曲、手腕放松，不要僵直下垂或整臂撑死。画面不要字幕。",
       "【事件顺序】",
     ].concat(shotsRaw.map((s, i) => codes[i] + "：" + s)).concat([
       "【声音】" + (mus ? mus.replace(/。$/, "") + "；仅配乐加" + amb + "。女孩全程不说话、不哼唱、不发出笑声与呼吸呢喃等人声，无对白无旁白，只有动作和无声笑容。" : "仅" + amb + "，不要背景音乐。女孩全程不说话、不哼唱、不发出笑声与呼吸呢喃等人声，无对白无旁白。"),
@@ -1371,7 +1389,7 @@ function videoFor(m: VidModel, v: Vals, tpl: number, music: string, jacket: numb
   return [
     "将@图片1中穿" + word + "Champion羽绒服的韩国女生定义为女孩，女孩、服装与场景保持@图片1的样子，生成9秒、720p、9:16竖屏的韩系街拍短视频。女孩像被朋友随手拍到，自信松弛，带一点小性感，动作连贯自然。" + move + "共" + n + "个镜头，硬切，每个镜头只用一种运镜：",
   ].concat(sd).concat([
-    "画面带轻微手持感，随性的生活抓拍。" + style + "全程无对白、无旁白，女孩不说话、不哼唱、不发出笑声与呼吸呢喃等人声；保持无字幕，不要生成水印或额外Logo；同一画面只有女孩一人，面部和身体比例稳定不变形，保持头小颈长、不头大身小；手部动作自然不僵硬，握物时手指分开贴合。",
+    "画面带轻微手持感，随性的生活抓拍。" + style + "全程无对白、无旁白，女孩不说话、不哼唱、不发出笑声与呼吸呢喃等人声；保持无字幕，不要生成水印或额外Logo；同一画面只有女孩一人，面部和身体比例稳定不变形，保持头小颈长、不头大身小；双手动作自然不僵硬，持物时手指分开贴合，空闲的那只手手指微曲、手腕放松，不要僵直下垂或整臂撑死。",
   ]).concat(mus ? ["（" + mus.replace(/。$/, "") + sdAmbMus] : ["（" + sdAmb + "）"]).join("\n");
 }
 
@@ -1382,9 +1400,8 @@ const POOL_LEGACY3 = "kr-down-pools-v10";
 const HIST_KEY = "kr-down-history-v8";
 const PREF_KEY = "kr-down-prefs-v3";
 const PREF_LEGACY = "kr-down-prefs-v2";
-const PAGE_VER = "v26 · 2026-11-10"; // 防大头生图措辞 + 自然手部视频措辞
+const PAGE_VER = "v32 · 2026-11-10"; // 花苞裙绑带鞋与盘发报童帽
 const V11_MERGE: Partial<Record<PoolKey, string[]>> = {
-  face: ["小圆脸，双眼皮圆眼，深棕色双低马尾辫，耳边有细碎发丝"],
   bottom: [
     "深棕色宽松阔腿裤，裤脚拖到脚面",
     "蓝色做旧直筒牛仔裤，裤长到鞋面",
@@ -1451,7 +1468,7 @@ const V22_MERGE: Partial<Record<PoolKey, string[]>> = {
     "【坐/无/开】坐在地面上，一条腿屈起，上身放松，看向镜头｜保持坐姿，看向镜头，嘴角微扬",
     "【坐/长凳、台阶、矮墙】坐在{座}，低头看手机，神情放松｜先低头看手机，再抬眼看向镜头，嘴角微扬",
     "一只手抬起抚头发，微笑看向镜头，另一只手自然垂放｜指尖把发丝拨到耳后，随后看向镜头，嘴角微扬",
-    "走在路上，一手端着咖啡杯和托碟，身体微侧，目光看向斜前方｜继续向前走，随后侧头看向镜头，嘴角微扬",
+    "走在路上，一手拿着纸杯咖啡，不要杯托和托碟，身体微侧，目光看向斜前方｜继续向前走，随后侧头看向镜头，嘴角微扬",
   ],
   bottom: [
     "深蓝灰高腰阔腿牛仔裤，裤脚拖到脚面",
@@ -1506,7 +1523,7 @@ const V22_MERGE: Partial<Record<PoolKey, string[]>> = {
 const V23_MERGE: Partial<Record<PoolKey, string[]>> = {
   pose: [
     "双手插在衣兜里，身体微侧，目光看向一侧｜保持双手插兜，随后侧头看向镜头，嘴角微扬",
-    "【靠/矮墙】一只手扶着{座}，手里拿着咖啡杯，身体微侧，看向镜头｜保持倚靠的姿态，看向镜头，嘴角微扬",
+    "【靠/矮墙】一只手扶着{座}，手里拿着纸杯咖啡，不要杯托和托碟，身体微侧，看向镜头｜保持倚靠的姿态，看向镜头，嘴角微扬",
     "双手插在衣兜里，身体正对镜头，看向镜头｜保持双手插兜，看向镜头，嘴角微扬",
     "【坐/矮墙、长凳】坐在{座}，一只手撑在身侧，另一只手举着手机，看向镜头｜保持坐姿，看向镜头，嘴角微扬",
     "【坐/床】单膝跪在{座}，双手插在衣兜里，看向镜头｜保持跪坐的姿态，看向镜头，嘴角微扬",
@@ -1514,7 +1531,7 @@ const V23_MERGE: Partial<Record<PoolKey, string[]>> = {
     "【坐/长凳】坐在{座}，双腿自然向前放，上身放松，看向镜头｜保持坐姿，看向镜头，嘴角微扬",
   ],
   bottom: [
-    "高腰绿棕红格纹花苞中长裙，裙长过膝近小腿中段",
+    "高腰绿棕红格纹花苞中长裙，格纹为绿色、棕色与红色，裙身中段鼓起、下摆收口呈花苞形，裙长过膝近小腿中段",
     "高腰深灰色百褶短裙，裙长到大腿中部",
     "高腰黑色波点短裙，米色圆点，下摆有黑白条纹织边，裙长到大腿中部",
     "米白色高腰阔腿裤，裤脚拖到脚面",
@@ -1530,7 +1547,7 @@ const V23_MERGE: Partial<Record<PoolKey, string[]>> = {
     "黑色短款圆领T恤，领口在锁骨上方",
   ],
   shoe: [
-    "棕色圆头浅口绑带鞋，米白色交叉鞋带，配橄榄绿中筒袜",
+    "棕色圆头浅口绑带鞋，鞋面上有米白色交叉鞋带，配贴腿的橄榄绿中筒袜，袜筒到小腿中段，不要堆成堆堆袜",
     "米杏色磨砂高筒靴，深棕色皮带扣，配白色堆堆袜",
     "黑色厚底毛毛雪地靴，靴筒上有银色铆钉装饰，配白色堆堆袜",
     "黑色低帮板鞋，白色厚底",
@@ -1556,6 +1573,12 @@ const V23_MERGE: Partial<Record<PoolKey, string[]>> = {
     "室内旅店客房，原木色边柜与台灯，旁边有浅色沙发浅景深虚化",
     "红砖墙外人行道，原木色长凳浅景深虚化",
   ],
+};
+const V31_MERGE: Partial<Record<PoolKey, string[]>> = {
+  shoe: ["米杏色磨砂靴，靴筒向下翻折堆在小腿，脚踝处有浅棕皮带扣，配白色粗针织堆堆袜，靴口上方露出大截袜筒"],
+};
+const V32_MERGE: Partial<Record<PoolKey, string[]>> = {
+  acc: ["一顶驼色报童帽，帽檐短而平整，头发向后梳或盘在脑后，帽檐下不露刘海，不遮挡眼睛"],
 };
 const V24_MERGE: Partial<Record<PoolKey, string[]>> = {
   makeup: [
@@ -1702,6 +1725,14 @@ const LEGACY_EXACT: [string, string][] = [
   ["A字毛呢半裙", "A字毛呢中裙"],
   ["灯芯绒A字裙", "灯芯绒A字中裙"],
   ["裙长刚到膝盖", "裙长刚过膝盖"],
+  ["走在路上，一手端着咖啡杯和托碟，身体微侧，目光看向斜前方｜继续向前走，随后侧头看向镜头，嘴角微扬", "走在路上，一手拿着纸杯咖啡，不要杯托和托碟，身体微侧，目光看向斜前方｜继续向前走，随后侧头看向镜头，嘴角微扬"],
+  ["【靠/矮墙】一只手扶着{座}，手里拿着咖啡杯，身体微侧，看向镜头｜保持倚靠的姿态，看向镜头，嘴角微扬", "【靠/矮墙】一只手扶着{座}，手里拿着纸杯咖啡，不要杯托和托碟，身体微侧，看向镜头｜保持倚靠的姿态，看向镜头，嘴角微扬"],
+  ["一手端着一杯热咖啡在腰侧，低头抿一口，再抬眼看镜头，另一只手自然垂放｜先低头抿一口咖啡，再抬眼看向镜头，笑意浅浅", "一手拿着纸杯咖啡在腰侧，不要杯托和托碟，低头抿一口，再抬眼看镜头，另一只手自然垂放｜先低头抿一口咖啡，再抬眼看向镜头，笑意浅浅"],
+  ["手里拿着咖啡杯", "手里拿着纸杯咖啡，不要杯托和托碟"],
+  ["一手端着一杯热咖啡在腰侧", "一手拿着纸杯咖啡在腰侧，不要杯托和托碟"],
+  ["咖啡杯和托碟", "纸杯咖啡，不要杯托和托碟"],
+  ["高腰绿棕红格纹花苞中长裙，裙长过膝近小腿中段", "高腰绿棕红格纹花苞中长裙，格纹为绿色、棕色与红色，裙身中段鼓起、下摆收口呈花苞形，裙长过膝近小腿中段"],
+  ["棕色圆头浅口绑带鞋，米白色交叉鞋带，配橄榄绿中筒袜", "棕色圆头浅口绑带鞋，鞋面上有米白色交叉鞋带，配贴腿的橄榄绿中筒袜，袜筒到小腿中段，不要堆成堆堆袜"],
 ];
 
 function fixExact(arr: string[]): string[] {
@@ -1739,6 +1770,7 @@ function loadPools(): Pools {
       let arr = k === "scene" || k === "light" ? fixExact(fixLegacy(s as string[])) : k === "pose" ? fixExact(fixLegacyPose(s as string[])) : fixExact(s as string[]);
       if (k === "pose") {
         const np = arr.length;
+        if ((s as string[]).some((p) => p.indexOf("咖啡杯和托碟") >= 0 || p.indexOf("手里拿着咖啡杯") >= 0 || p.indexOf("一手端着一杯热咖啡在腰侧") >= 0)) poolMerged = true;
         arr = fixLegacyPose(arr);
         if (arr.length < np) migrated = true;
         if (arr.length === 0) arr = DEFAULT_POOLS.pose.slice();
@@ -1763,9 +1795,17 @@ function loadPools(): Pools {
       }
       if (k === "bottom") {
         const nb = arr.length;
+        if ((s as string[]).some((p) => p.indexOf("高腰绿棕红格纹花苞中长裙，裙长过膝近小腿中段") >= 0)) poolMerged = true;
         arr = arr.filter((s) => s.indexOf("紧身裤") < 0);
         if (arr.length < nb) migrated = true;
         if (arr.length === 0) arr = DEFAULT_POOLS.bottom.slice();
+      }
+      if (k === "shoe" && (s as string[]).some((p) => p.indexOf("棕色圆头浅口绑带鞋，米白色交叉鞋带，配橄榄绿中筒袜") >= 0)) poolMerged = true;
+      if (k === "face") {
+        const nf = arr.length;
+        arr = arr.filter((s) => !/鹅蛋脸|小圆脸|偏圆小脸|圆脸|娃娃脸/.test(s));
+        if (arr.length < nf) poolMerged = true;
+        if (arr.length === 0) arr = DEFAULT_POOLS.face.slice();
       }
       if (k === "scene") {
         const nb = arr.length;
@@ -1782,6 +1822,10 @@ function loadPools(): Pools {
       if (add23) for (const x of add23) if (arr.indexOf(x) < 0) { arr.push(x); poolMerged = true; }
       const add24 = V24_MERGE[k];
       if (add24) for (const x of add24) if (arr.indexOf(x) < 0) { arr.push(x); poolMerged = true; }
+      const add31 = V31_MERGE[k];
+      if (add31) for (const x of add31) if (arr.indexOf(x) < 0) { arr.push(x); poolMerged = true; }
+      const add32 = V32_MERGE[k];
+      if (add32) for (const x of add32) if (arr.indexOf(x) < 0) { arr.push(x); poolMerged = true; }
       out[k] = arr;
     } else out[k] = DEFAULT_POOLS[k].slice();
   }
