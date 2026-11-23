@@ -211,6 +211,50 @@ button{border:0;background:none;cursor:pointer;text-align:left;appearance:none;-
 .item--honor{--ow:var(--w-honor)}
 .item--erliu{--ow:var(--w-erliu)}
 .item--contact{--ow:var(--w-contact)}
+.item--contact .contact-face,
+.contact-face{
+  position:relative;
+  display:block;
+}
+.item--contact .contact-face picture,
+.item--contact .contact-face .obj-img{
+  display:block;
+  width:var(--ow);
+  height:auto;
+}
+.contact-email{
+  position:absolute;
+  left:24.2%;
+  top:66.85%;
+  width:58%;
+  font-family:var(--sans);
+  font-weight:500;
+  font-size:calc(var(--ow) * 0.028);
+  line-height:1;
+  letter-spacing:.01em;
+  color:#3a3b40;
+  white-space:nowrap;
+  transform:rotate(1.62deg);
+  transform-origin:left 85%;
+  pointer-events:none;
+  text-shadow:0 0 .2px rgba(58,59,64,.35);
+}
+.lightbox__visual .contact-face{
+  width:min(360px,100%);
+  margin:0 auto;
+  container-type:inline-size;
+}
+.lightbox__visual .contact-face .obj-img,
+.lightbox__visual .contact-face img{
+  width:100%;
+  height:auto;
+  max-width:100%;
+  max-height:none;
+}
+.lightbox__visual .contact-email{
+  font-size:2.8cqw;
+}
+
 .item--poster{--ow:var(--w-frame)}
 .item--skills-set{--ow:var(--w-skills)}
 .item--m1{--ow:var(--w-m1)}

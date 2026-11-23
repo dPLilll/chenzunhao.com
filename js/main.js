@@ -42,7 +42,7 @@
     lbMeta.textContent = data.meta || "";
     lbBody.innerHTML = data.html || "";
     lbVisual.innerHTML = "";
-    const face = btn.querySelector(".name-sign, picture, .obj-img, .hint, .work, .card, .tags");
+    const face = btn.querySelector(".contact-face, .name-sign, picture, .obj-img, .hint, .work, .card, .tags");
     if (face) {
       const clone = face.cloneNode(true);
       clone.querySelectorAll("[aria-hidden]").forEach((n) => n.remove());
