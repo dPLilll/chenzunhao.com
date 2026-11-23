@@ -1,0 +1,486 @@
+{
+  "version": 1,
+  "notes": "Fastener coordinates are in source PNG pixels, origin top-left. Primary anchor is used for hole-grid placement and drag-snap. Multi-fastener objects are scaled so fastener spans are integer hole pitches, and are not rotated. Skill-tag hanging holes go through the rod rings, not the board; only the hook-bar end posts mount to the board. Magnets, the 贰 sticker, and the empty frame have no drawn board fastener; a visual-center or implied nail is stored as a reference snap point. Acrylic plates were re-rendered without the baked perspective tilt so the four screws form an exact rectangle (originals in src/bak-tilted/). Honor screw CSS positions were nudged to a 7:2 pitch ratio (819×234) so both axes land on holes.",
+  "board": {
+    "mobile": {
+      "grid": 20,
+      "startX": 15,
+      "startY": 0,
+      "holeCenter": [
+        0.5,
+        0.5
+      ]
+    },
+    "desktop": {
+      "grid": 24,
+      "startX": 24,
+      "startY": 12,
+      "holeCenter": [
+        0.5,
+        0.5
+      ]
+    }
+  },
+  "objects": {
+    "suhao": {
+      "src": "assets/objects/suhao-acrylic.png",
+      "srcSize": [
+        1305,
+        1319
+      ],
+      "rotate": 0,
+      "scaleHoles": {
+        "mobile": [
+          4,
+          4
+        ],
+        "desktop": [
+          4,
+          4
+        ]
+      },
+      "width": {
+        "formula": "k * grid * srcW / spanX",
+        "spanX": 992.0,
+        "spanY": 992.0
+      },
+      "primary": "tl",
+      "fasteners": [
+        {
+          "id": "tl",
+          "kind": "screw",
+          "x": 123.5,
+          "y": 122.56
+        },
+        {
+          "id": "tr",
+          "kind": "screw",
+          "x": 1115.5,
+          "y": 122.6
+        },
+        {
+          "id": "bl",
+          "kind": "screw",
+          "x": 123.51,
+          "y": 1114.58
+        },
+        {
+          "id": "br",
+          "kind": "screw",
+          "x": 1115.52,
+          "y": 1114.6
+        }
+      ]
+    },
+    "honor": {
+      "src": "assets/objects/honor-acrylic.png",
+      "srcSize": [
+        2025,
+        859
+      ],
+      "rotate": 0,
+      "scaleHoles": {
+        "mobile": [
+          7,
+          2
+        ],
+        "desktop": [
+          7,
+          2
+        ]
+      },
+      "width": {
+        "formula": "k * grid * srcW / spanX",
+        "spanX": 1638.0,
+        "spanY": 468.04
+      },
+      "primary": "tl",
+      "fasteners": [
+        {
+          "id": "tl",
+          "kind": "screw",
+          "x": 160.49,
+          "y": 154.59
+        },
+        {
+          "id": "tr",
+          "kind": "screw",
+          "x": 1798.49,
+          "y": 154.63
+        },
+        {
+          "id": "bl",
+          "kind": "screw",
+          "x": 160.49,
+          "y": 622.64
+        },
+        {
+          "id": "br",
+          "kind": "screw",
+          "x": 1798.49,
+          "y": 622.63
+        }
+      ]
+    },
+    "skills": {
+      "src": "assets/objects/skill-tags-hook-set-acrylic.png",
+      "srcSize": [
+        4783,
+        419
+      ],
+      "rotate": 0,
+      "scaleHoles": {
+        "mobile": [
+          17,
+          0
+        ],
+        "desktop": [
+          31,
+          0
+        ]
+      },
+      "width": {
+        "spanX": 4624.0
+      },
+      "primary": "post-l",
+      "fasteners": [
+        {
+          "id": "post-l",
+          "kind": "hook-bar-end",
+          "x": 65.87,
+          "y": 73.16
+        },
+        {
+          "id": "post-r",
+          "kind": "hook-bar-end",
+          "x": 4689.87,
+          "y": 73.24
+        }
+      ],
+      "note": "Tag hanging holes attach to the rod via rings, not to the board."
+    },
+    "contact": {
+      "src": "assets/objects/contact-card-clip.png",
+      "srcSize": [
+        1496,
+        1192
+      ],
+      "primary": "hook",
+      "fasteners": [
+        {
+          "id": "hook",
+          "kind": "clip-loop",
+          "x": 711.5,
+          "y": 39.5
+        }
+      ]
+    },
+    "name": {
+      "css": true,
+      "rotate": 0,
+      "primary": "tl",
+      "size": {
+        "mobile": [
+          320,
+          160
+        ],
+        "desktop": [
+          520,
+          208
+        ]
+      },
+      "inset": 20,
+      "scaleHoles": {
+        "mobile": [
+          14,
+          6
+        ],
+        "desktop": [
+          20,
+          7
+        ]
+      },
+      "fasteners": [
+        {
+          "id": "tl",
+          "kind": "screw",
+          "note": "CSS, at (inset, inset) in the name-sign box"
+        },
+        {
+          "id": "tr",
+          "kind": "screw"
+        },
+        {
+          "id": "bl",
+          "kind": "screw"
+        },
+        {
+          "id": "br",
+          "kind": "screw"
+        }
+      ]
+    },
+    "huxiu": {
+      "src": "assets/objects/huxiu-badge-enamel.png",
+      "srcSize": [
+        1404,
+        1427
+      ],
+      "primary": "pin",
+      "fasteners": [
+        {
+          "id": "pin",
+          "kind": "pin",
+          "x": 656.5,
+          "y": 656.3,
+          "note": "optical center of the enamel face; no hook is drawn in the art"
+        }
+      ]
+    },
+    "suda": {
+      "src": "assets/objects/suda-badge.png",
+      "srcSize": [
+        1470,
+        1486
+      ],
+      "primary": "pin",
+      "fasteners": [
+        {
+          "id": "pin",
+          "kind": "pin",
+          "x": 692.1,
+          "y": 679.4,
+          "note": "optical center of the badge face"
+        }
+      ]
+    },
+    "xiuyixia": {
+      "src": "assets/objects/xiuyixia-badge.png",
+      "srcSize": [
+        1461,
+        745
+      ],
+      "primary": "pin",
+      "fasteners": [
+        {
+          "id": "pin",
+          "kind": "pin",
+          "x": 689.1,
+          "y": 312.6,
+          "note": "optical center; plate has no drawn fastener"
+        }
+      ]
+    },
+    "erliu": {
+      "src": "assets/objects/audience2-sticker.png",
+      "srcSize": [
+        1329,
+        1241
+      ],
+      "free": true,
+      "primary": "ref",
+      "fasteners": [
+        {
+          "id": "ref",
+          "kind": "reference-center",
+          "x": 635.9,
+          "y": 598.0
+        }
+      ]
+    },
+    "poster": {
+      "src": "assets/objects/frame-poster-empty.png",
+      "srcSize": [
+        1415,
+        1795
+      ],
+      "free": true,
+      "primary": "nail",
+      "fasteners": [
+        {
+          "id": "nail",
+          "kind": "implied-nail",
+          "x": 729.9,
+          "y": 85.0,
+          "note": "midpoint of the top rail; no hanger is drawn. Kept as a placeholder for quote posters."
+        }
+      ]
+    },
+    "m1": {
+      "src": "assets/objects/magnet-m1-brave.png",
+      "srcSize": [
+        1321,
+        1256
+      ],
+      "free": true,
+      "primary": "ref",
+      "fasteners": [
+        {
+          "id": "ref",
+          "kind": "reference-center",
+          "x": 561.3,
+          "y": 633.5
+        }
+      ]
+    },
+    "m2a": {
+      "src": "assets/objects/magnet-m2-ancora-mingtian.png",
+      "srcSize": [
+        1330,
+        756
+      ],
+      "free": true,
+      "primary": "ref",
+      "fasteners": [
+        {
+          "id": "ref",
+          "kind": "reference-center",
+          "x": 632.4,
+          "y": 336.7
+        }
+      ]
+    },
+    "m3": {
+      "src": "assets/objects/magnet-m3-black-yellow.png",
+      "srcSize": [
+        948,
+        1340
+      ],
+      "free": true,
+      "primary": "ref",
+      "fasteners": [
+        {
+          "id": "ref",
+          "kind": "reference-center",
+          "x": 458.0,
+          "y": 687.8
+        }
+      ]
+    },
+    "m4": {
+      "src": "assets/objects/magnet-m4-yuzhou.png",
+      "srcSize": [
+        1312,
+        1303
+      ],
+      "free": true,
+      "primary": "ref",
+      "fasteners": [
+        {
+          "id": "ref",
+          "kind": "reference-center",
+          "x": 759.5,
+          "y": 658.4
+        }
+      ]
+    },
+    "video": {
+      "src": "assets/objects/badge-video.png",
+      "srcSize": [
+        1000,
+        1039
+      ],
+      "primary": "ref",
+      "fasteners": [
+        {
+          "id": "ref",
+          "kind": "reference-center",
+          "x": 494.5,
+          "y": 510.0
+        }
+      ],
+      "holes": {
+        "mobile": {
+          "col": 4,
+          "row": 61
+        },
+        "desktop": {
+          "col": 3,
+          "row": 11
+        }
+      },
+      "notes": "Magnetic enamel badge; optical center is the reference snap point. No hook."
+    },
+    "design": {
+      "src": "assets/objects/badge-design.png",
+      "srcSize": [
+        952,
+        873
+      ],
+      "primary": "ref",
+      "fasteners": [
+        {
+          "id": "ref",
+          "kind": "reference-center",
+          "x": 476.0,
+          "y": 430.5
+        }
+      ],
+      "holes": {
+        "mobile": {
+          "col": 14,
+          "row": 61
+        },
+        "desktop": {
+          "col": 19,
+          "row": 4
+        }
+      },
+      "notes": "Magnetic enamel badge; optical center is the reference snap point. No hook."
+    },
+    "articles": {
+      "src": "assets/objects/badge-articles.png",
+      "srcSize": [
+        950,
+        1012
+      ],
+      "primary": "ref",
+      "fasteners": [
+        {
+          "id": "ref",
+          "kind": "reference-center",
+          "x": 475.0,
+          "y": 492.0
+        }
+      ],
+      "holes": {
+        "mobile": {
+          "col": 4,
+          "row": 70
+        },
+        "desktop": {
+          "col": 47,
+          "row": 8
+        }
+      },
+      "notes": "Magnetic enamel badge; optical center is the reference snap point. No hook."
+    },
+    "photos": {
+      "src": "assets/objects/badge-photos.png",
+      "srcSize": [
+        1048,
+        710
+      ],
+      "primary": "ref",
+      "fasteners": [
+        {
+          "id": "ref",
+          "kind": "reference-center",
+          "x": 513.5,
+          "y": 340.5
+        }
+      ],
+      "holes": {
+        "mobile": {
+          "col": 14,
+          "row": 70
+        },
+        "desktop": {
+          "col": 18,
+          "row": 25
+        }
+      },
+      "notes": "Magnetic enamel badge; optical center is the reference snap point. No hook."
+    }
+  }
+}

@@ -3,308 +3,229 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>dP狸 · 陈遵浩</title>
-<meta name="description" content="dP狸（陈遵浩）：内容运营、短视频与视觉设计。">
-<meta name="theme-color" content="#ffffff">
+<title>dP狸 陈遵浩 · 洞洞板示例</title>
+<meta name="description" content="dP狸（陈遵浩）个人网站洞洞板首页示例。内容运营、新媒体与视觉设计。">
+<meta name="theme-color" content="#f3f3f1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="board-scale">
+<main class="board" id="board" aria-label="白色金属洞洞板首页示例">
 
-<header class="nav" id="top">
-  <a class="nav__brand" href="#top">dP狸</a>
-  <nav class="nav__links" aria-label="页面导航">
-    <a href="#work">案例</a>
-    <a href="#timeline">履历</a>
-    <a href="#skills">技能</a>
-    <a href="#contact" class="nav__cta">联系</a>
-  </nav>
-</header>
+  <button class="item item--name" type="button" data-item="about" data-drag="1" style="--mx:1;--my:2;--dx:18;--dy:13;--rot:0deg">
+    <span class="name-sign">
+      <span class="name-sign__screw name-sign__screw--tl" aria-hidden="true"></span>
+      <span class="name-sign__screw name-sign__screw--tr" aria-hidden="true"></span>
+      <span class="name-sign__screw name-sign__screw--bl" aria-hidden="true"></span>
+      <span class="name-sign__screw name-sign__screw--br" aria-hidden="true"></span>
+      <b class="name-sign__brand">dP狸</b>
+      <span class="name-sign__cn">陈遵浩</span>
+      <span class="name-sign__role">内容运营 · 新媒体 · 视觉设计</span>
+    </span>
+  </button>
 
-<main>
+  <button class="item item--hint" type="button" data-item="hint" style="--mx:14;--my:12;--dx:54;--dy:1;--rot:2.0deg">
+    <span class="hint">点按看详情<span>电脑上可拖动</span></span>
+  </button>
 
-<!-- 1 首屏 -->
-<section class="hero" aria-labelledby="hero-title">
-  <div class="wrap hero__grid">
-    <div class="hero__text">
-      <p class="eyebrow">内容运营 / 短视频 / 视觉设计</p>
-      <h1 id="hero-title" class="hero__name">dP狸</h1>
-      <p class="hero__real">陈遵浩</p>
-      <p class="hero__lead">在头部商业财经媒体做过3年以上视频策划、剪辑与运营，也独立运营小红书文娱账号“二流观众”，从图文卡片做到原创周边。</p>
-      <div class="hero__actions">
-        <a class="btn btn--solid" href="#work" data-filter-jump="ops">看运营案例</a>
-        <a class="btn" href="#work" data-filter-jump="design">看设计作品</a>
-        <a class="btn" href="#contact">谈合作</a>
-      </div>
-    </div>
-    <figure class="hero__photo">
-      <img src="assets/avatar.jpg" width="320" height="400" alt="陈遵浩照片">
-    </figure>
-  </div>
-</section>
+  <button class="item item--obj item--contact" type="button" data-item="contact" style="--sw:1496;--fx:711.50;--fy:39.50;--mx:4;--my:13;--dx:11;--dy:15;--rot:-2.0deg">
+    <picture>
+      <source type="image/webp" srcset="assets/objects/webp/contact-card-clip-600.webp 600w, assets/objects/webp/contact-card-clip-1000.webp 1000w" sizes="(min-width: 900px) 200px, 170px">
+      <img class="obj-img" src="assets/objects/contact-card-clip.png" width="1496" height="1192" alt="联系卡片，邮箱待填写" draggable="false">
+    </picture>
+  </button>
 
-<!-- 2 数据条 -->
-<section class="stats" aria-labelledby="stats-title">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="section-head__no">01</span>
-      <h2 id="stats-title">关键数据</h2>
-      <span class="stats__hint" aria-hidden="true">左右滑动</span>
-    </div>
-  </div>
-  <ul class="stats__strip" role="list">
-    <li class="stat"><b>84W</b><span>“虎嗅APP”视频号累计粉丝</span></li>
-    <li class="stat"><b>80%</b><span>负责期间视频号粉丝增长</span></li>
-    <li class="stat"><b>180W+</b><span>“嗅一下”最高单条视频播放</span></li>
-    <li class="stat"><b>8W→10W</b><span>“嗅一下”IP视频平均播放提升</span></li>
-    <li class="stat"><b>9400+</b><span>小红书账号调整策略后1个月涨粉</span></li>
-    <li class="stat"><b>300+</b><span>虎嗅小红书图文平均点赞</span></li>
-    <li class="stat"><b>6000+</b><span>“二流观众”账号粉丝</span></li>
-    <li class="stat"><b>10W+</b><span>“二流观众”获赞与收藏</span></li>
-    <li class="stat"><b>1000+</b><span>小红书店铺周边销量（单量）</span></li>
-    <li class="stat"><b>1小时内</b><span>荣耀浏览器热点内容响应时效</span></li>
-  </ul>
-</section>
+  <button class="item item--obj item--huxiu" type="button" data-item="huxiu" style="--sw:1404;--fx:656.5;--fy:656.3;--mx:13;--my:17;--dx:12;--dy:2;--rot:1.6deg">
+    <picture>
+      <source type="image/webp" srcset="assets/objects/webp/huxiu-badge-enamel-480.webp 480w, assets/objects/webp/huxiu-badge-enamel-880.webp 880w" sizes="(min-width: 900px) 142px, 106px">
+      <img class="obj-img" src="assets/objects/huxiu-badge-enamel.png" width="1404" height="1427" alt="虎嗅珐琅徽章" draggable="false">
+    </picture>
+  </button>
 
-<!-- 3 案例 -->
-<section class="work" id="work" aria-labelledby="work-title">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="section-head__no">02</span>
-      <h2 id="work-title">案例</h2>
-    </div>
-    <div class="filter" role="group" aria-label="按类型筛选">
-      <button type="button" class="filter__btn is-active" data-filter="all" aria-pressed="true">全部</button>
-      <button type="button" class="filter__btn" data-filter="ops" aria-pressed="false">运营</button>
-      <button type="button" class="filter__btn" data-filter="design" aria-pressed="false">设计</button>
-    </div>
+  <button class="item item--obj item--suhao" type="button" data-item="suhao" style="--sw:1305;--fx:123.50;--fy:122.56;--mx:1;--my:22;--dx:42;--dy:14;--rot:0deg">
+    <picture>
+      <source type="image/webp" srcset="assets/objects/webp/suhao-acrylic-480.webp 480w, assets/objects/webp/suhao-acrylic-880.webp 880w" sizes="(min-width: 900px) 126px, 105px">
+      <img class="obj-img" src="assets/objects/suhao-acrylic.png" width="1305" height="1319" alt="苏豪亚克力徽章" draggable="false">
+    </picture>
+  </button>
 
-    <div class="cards">
+  <button class="item item--obj item--honor" type="button" data-item="honor" style="--sw:2025;--fx:160.49;--fy:154.59;--mx:9;--my:22;--dx:41;--dy:1;--rot:0deg">
+    <picture>
+      <source type="image/webp" srcset="assets/objects/webp/honor-acrylic-600.webp 600w, assets/objects/webp/honor-acrylic-1000.webp 1000w" sizes="(min-width: 900px) 208px, 173px">
+      <img class="obj-img" src="assets/objects/honor-acrylic.png" width="2025" height="859" alt="荣耀亚克力铭牌" draggable="false">
+    </picture>
+  </button>
 
-      <article class="card" data-tags="ops">
-        <div class="card__media"><span>作品图待补</span></div>
-        <div class="card__body">
-          <p class="card__meta"><span class="tag">运营</span>虎嗅 · 2022.07至2025.05</p>
-          <h3>“虎嗅APP”视频号</h3>
-          <dl class="card__dl">
-            <dt>背景</dt><dd>主导并深度参与虎嗅旗下全系列IP（嗅一下、虎学研究、赛博食录、三亿世代实验室等）的视频运营。</dd>
-            <dt>做了什么</dt><dd>参与视频号运营策略制定与执行，做内容定位和推广。</dd>
-            <dt>结果</dt><dd>负责期间粉丝增长80%，累计粉丝达到84W。</dd>
-          </dl>
-          <ul class="card__nums"><li><b>84W</b>累计粉丝</li><li><b>80%</b>粉丝增长</li></ul>
-        </div>
-      </article>
+  <button class="item item--obj item--suda" type="button" data-item="suda" style="--sw:1470;--fx:692.1;--fy:679.4;--mx:3;--my:31;--dx:3;--dy:3;--rot:-2.4deg">
+    <picture>
+      <source type="image/webp" srcset="assets/objects/webp/suda-badge-480.webp 480w, assets/objects/webp/suda-badge-880.webp 880w" sizes="(min-width: 900px) 157px, 118px">
+      <img class="obj-img" src="assets/objects/suda-badge.png" width="1470" height="1486" alt="苏州大学校徽徽章" draggable="false">
+    </picture>
+  </button>
 
-      <article class="card" data-tags="ops">
-        <div class="card__media"><span>作品图待补</span></div>
-        <div class="card__body">
-          <p class="card__meta"><span class="tag">运营</span>虎嗅 · 短视频IP</p>
-          <h3>“嗅一下”短视频IP</h3>
-          <dl class="card__dl">
-            <dt>背景</dt><dd>虎嗅内部重点打造的短视频IP，账号涨粉的主力IP。</dd>
-            <dt>做了什么</dt><dd>制定针对性的运营方案，一个季度内制作50条视频。</dd>
-            <dt>结果</dt><dd>季度爆款17条，爆款完成度120%；IP视频平均播放从最初的8W提升至10W，最高单条播放180W+，多条播放量100W+。</dd>
-          </dl>
-          <ul class="card__nums"><li><b>180W+</b>最高单条播放</li><li><b>17/50</b>季度爆款</li></ul>
-        </div>
-      </article>
+  <button class="item item--obj item--xiuyixia" type="button" data-item="xun" style="--sw:1461;--fx:689.1;--fy:312.6;--mx:13;--my:31;--dx:28;--dy:6;--rot:-2.2deg">
+    <picture>
+      <source type="image/webp" srcset="assets/objects/webp/xiuyixia-badge-600.webp 600w, assets/objects/webp/xiuyixia-badge-1000.webp 1000w" sizes="(min-width: 900px) 224px, 168px">
+      <img class="obj-img" src="assets/objects/xiuyixia-badge.png" width="1461" height="745" alt="嗅一下徽章" draggable="false">
+    </picture>
+  </button>
 
-      <article class="card" data-tags="ops design">
-        <div class="card__media"><span>作品图待补</span></div>
-        <div class="card__body">
-          <p class="card__meta"><span class="tag">运营</span><span class="tag">设计</span>虎嗅 · 小红书</p>
-          <h3>虎嗅APP小红书图文板块</h3>
-          <dl class="card__dl">
-            <dt>背景</dt><dd>为“虎嗅APP”小红书账号创新内容形态。</dd>
-            <dt>做了什么</dt><dd>独立策划图文板块，从内容定位、形态设计到制作模板的定义，全程主导并执行。</dd>
-            <dt>结果</dt><dd>图文平均点赞300+；受小红书产品部门邀请进行经验交流分享。</dd>
-          </dl>
-          <ul class="card__nums"><li><b>300+</b>图文平均点赞</li></ul>
-        </div>
-      </article>
+  <button class="item item--obj item--erliu" type="button" data-item="erliu" style="--sw:1329;--fx:635.9;--fy:598.0;--mx:3;--my:38;--dx:44;--dy:26;--rot:2.8deg">
+    <picture>
+      <source type="image/webp" srcset="assets/objects/webp/audience2-sticker-480.webp 480w, assets/objects/webp/audience2-sticker-880.webp 880w" sizes="(min-width: 900px) 144px, 108px">
+      <img class="obj-img" src="assets/objects/audience2-sticker.png" width="1329" height="1241" alt="二流观众贴纸" draggable="false">
+    </picture>
+  </button>
 
-      <article class="card" data-tags="ops">
-        <div class="card__media"><span>作品图待补</span></div>
-        <div class="card__body">
-          <p class="card__meta"><span class="tag">运营</span>虎嗅 · 账号策略</p>
-          <h3>对标账号调研与策略优化</h3>
-          <dl class="card__dl">
-            <dt>背景</dt><dd>旗下多个账号出现掉粉。</dd>
-            <dt>做了什么</dt><dd>调研全网对标账号的发布规律、内容形态和成本投入，结合自身账号特点制定运营策略；同时与小红书、哔哩哔哩、视频号、抖音等平台的运营编辑保持沟通，让旗下IP的视频参与平台活动。</dd>
-            <dt>结果</dt><dd>多个账号由掉粉转为涨粉；“虎嗅APP”小红书账号调整策略后1个月内粉丝增长9400+。</dd>
-          </dl>
-          <ul class="card__nums"><li><b>9400+</b>1个月涨粉</li></ul>
-        </div>
-      </article>
+  <button class="item item--obj item--poster" type="button" data-item="poster" style="--sw:1415;--fx:729.9;--fy:85.0;--mx:14;--my:37;--dx:51;--dy:14;--rot:-1.8deg">
+    <picture>
+      <source type="image/webp" srcset="assets/objects/webp/frame-poster-empty-480.webp 480w, assets/objects/webp/frame-poster-empty-880.webp 880w" sizes="(min-width: 900px) 118px, 100px">
+      <img class="obj-img" src="assets/objects/frame-poster-empty.png" width="1415" height="1795" alt="空画框，海报占位" draggable="false">
+    </picture>
+  </button>
 
-      <article class="card" data-tags="ops design">
-        <div class="card__media card__media--avatar"><img src="assets/erliu-avatar.png" width="118" height="118" alt="“二流观众”账号头像"><span>作品图待补</span></div>
-        <div class="card__body">
-          <p class="card__meta"><span class="tag">运营</span><span class="tag">设计</span>个人项目 · 2023.12至今</p>
-          <h3>“二流观众”账号与图文卡片</h3>
-          <dl class="card__dl">
-            <dt>背景</dt><dd>独立打造的小红书文娱账号，围绕电影、音乐、文化做图片设计。</dd>
-            <dt>做了什么</dt><dd>从0到1搭建内容体系，研究受众喜好，结合热点创作图文笔记，用数据优化发布时间和标题。</dd>
-            <dt>结果</dt><dd>多篇笔记点赞1W+，粉丝6000+，获赞与收藏10W+；“年少日记”系列图片设计获得电影官方关注并转发；与腾讯音乐合作14条内容，其中3条笔记点赞100+。</dd>
-          </dl>
-          <ul class="card__nums"><li><b>6000+</b>粉丝</li><li><b>10W+</b>获赞与收藏</li><li><b>14条</b>腾讯音乐合作</li></ul>
-          <a class="card__link" href="https://www.xiaohongshu.com/user/profile/5f94220900000000010039cf" target="_blank" rel="noopener">去小红书看“二流观众”</a>
-        </div>
-      </article>
 
-      <article class="card" data-tags="design">
-        <div class="card__media"><span>作品图待补</span></div>
-        <div class="card__body">
-          <p class="card__meta"><span class="tag">设计</span>个人项目 · 原创周边</p>
-          <h3>“二流观众”原创周边</h3>
-          <dl class="card__dl">
-            <dt>背景</dt><dd>为账号开发冰箱贴等文创周边，并开通小红书店铺售卖。</dd>
-            <dt>做了什么</dt><dd>独立完成周边的3D设计，用3D打印打样并生产；独立完成包装设计和电商详情页设计；负责商品上架，用薯条推广、话题活动等工具做推广。</dd>
-            <dt>结果</dt><dd>小红书店铺销量（单量）1000+；独立设计的“好东西”系列冰箱贴销量400件+。</dd>
-          </dl>
-          <ul class="card__nums"><li><b>1000+</b>店铺销量（单量）</li><li><b>400件+</b>“好东西”系列</li></ul>
-        </div>
-      </article>
+  <button class="item item--obj item--badge item--badge-video" type="button" data-works="video" data-drag="1" aria-label="视频" style="--sw:1000;--fx:494.5;--fy:510.0;--mx:4;--my:61;--dx:3;--dy:11;--rot:-2deg">
+    <picture>
+      <source type="image/webp" srcset="assets/objects/webp/badge-video-480.webp 480w, assets/objects/webp/badge-video-880.webp 880w" sizes="(min-width: 900px) 131px, 98px">
+      <img class="obj-img" src="assets/objects/badge-video.png" width="1000" height="1039" alt="视频" draggable="false">
+    </picture>
+    <span class="badge-label">视频</span>
+  </button>
+  <button class="item item--obj item--badge item--badge-design" type="button" data-works="design" data-drag="1" aria-label="平面设计" style="--sw:952;--fx:476.0;--fy:430.5;--mx:14;--my:61;--dx:19;--dy:4;--rot:2deg">
+    <picture>
+      <source type="image/webp" srcset="assets/objects/webp/badge-design-480.webp 480w, assets/objects/webp/badge-design-880.webp 880w" sizes="(min-width: 900px) 135px, 101px">
+      <img class="obj-img" src="assets/objects/badge-design.png" width="952" height="873" alt="平面设计" draggable="false">
+    </picture>
+    <span class="badge-label">平面设计</span>
+  </button>
+  <button class="item item--obj item--badge item--badge-articles" type="button" data-works="articles" data-drag="1" aria-label="文章" style="--sw:950;--fx:475.0;--fy:492.0;--mx:4;--my:70;--dx:47;--dy:8;--rot:-1deg">
+    <picture>
+      <source type="image/webp" srcset="assets/objects/webp/badge-articles-480.webp 480w, assets/objects/webp/badge-articles-880.webp 880w" sizes="(min-width: 900px) 130px, 97px">
+      <img class="obj-img" src="assets/objects/badge-articles.png" width="950" height="1012" alt="文章" draggable="false">
+    </picture>
+    <span class="badge-label">文章</span>
+  </button>
+  <button class="item item--obj item--badge item--badge-photos" type="button" data-works="photos" data-drag="1" aria-label="摄影" style="--sw:1048;--fx:513.5;--fy:340.5;--mx:14;--my:70;--dx:18;--dy:25;--rot:1deg">
+    <picture>
+      <source type="image/webp" srcset="assets/objects/webp/badge-photos-480.webp 480w, assets/objects/webp/badge-photos-880.webp 880w" sizes="(min-width: 900px) 136px, 102px">
+      <img class="obj-img" src="assets/objects/badge-photos.png" width="1048" height="710" alt="摄影" draggable="false">
+    </picture>
+    <span class="badge-label">摄影</span>
+  </button>
+  <button class="item item--obj item--skills-set" type="button" data-item="skills" style="--sw:4783;--fx:65.87;--fy:73.16;--mx:0;--my:77;--dx:12;--dy:31;--rot:0deg">
+    <picture>
+      <source type="image/webp" srcset="assets/objects/webp/skill-tags-hook-set-acrylic-1200.webp 1200w, assets/objects/webp/skill-tags-hook-set-acrylic-2000.webp 2000w" sizes="(min-width: 900px) 770px, 352px">
+      <img class="obj-img" src="assets/objects/skill-tags-hook-set-acrylic.png" width="4783" height="419" alt="技能标签挂条" draggable="false">
+    </picture>
+  </button>
 
-      <article class="card" data-tags="ops">
-        <div class="card__media"><span>作品图待补</span></div>
-        <div class="card__body">
-          <p class="card__meta"><span class="tag">运营</span>荣耀 · 2025.09至2025.10</p>
-          <h3>荣耀浏览器热点卡片</h3>
-          <dl class="card__dl">
-            <dt>背景</dt><dd>负责热点浏览器信息流卡片内容，覆盖全网热点和重要节点。</dd>
-            <dt>做了什么</dt><dd>以热点为核心策划卡片内容和专题；优化卡片封面与标题；调研5+主流商用免费图库，测试3类图片优化工具（含AI工具），输出调研和对比文档。</dd>
-            <dt>结果</dt><dd>热点内容响应时效控制在1小时内；工具落地后卡片配图高清率达100%。</dd>
-          </dl>
-          <ul class="card__nums"><li><b>1小时内</b>热点响应</li><li><b>100%</b>配图高清率</li></ul>
-        </div>
-      </article>
+  <button class="item item--obj item--mag item--m1" type="button" data-item="merch" style="--sw:1321;--fx:561.3;--fy:633.5;--mx:3;--my:47;--dx:6;--dy:25;--rot:-2.6deg">
+    <picture>
+      <source type="image/webp" srcset="assets/objects/webp/magnet-m1-brave-480.webp 480w, assets/objects/webp/magnet-m1-brave-800.webp 800w" sizes="(min-width: 900px) 118px, 100px">
+      <img class="obj-img" src="assets/objects/magnet-m1-brave.png" width="1321" height="1256" alt="冰箱贴，我正直勇敢有阅读量" draggable="false">
+    </picture>
+  </button>
+  <button class="item item--obj item--mag item--m2a" type="button" data-item="merch" style="--sw:1330;--fx:632.4;--fy:336.7;--mx:13;--my:47;--dx:52;--dy:26;--rot:2.0deg">
+    <picture>
+      <source type="image/webp" srcset="assets/objects/webp/magnet-m2-ancora-mingtian-480.webp 480w, assets/objects/webp/magnet-m2-ancora-mingtian-800.webp 800w" sizes="(min-width: 900px) 138px, 118px">
+      <img class="obj-img" src="assets/objects/magnet-m2-ancora-mingtian.png" width="1330" height="756" alt="冰箱贴，还有明天" draggable="false">
+    </picture>
+  </button>
+  <button class="item item--obj item--mag item--m4" type="button" data-item="merch" style="--sw:1312;--fx:759.5;--fy:658.4;--mx:13;--my:53;--dx:37;--dy:7;--rot:2.2deg">
+    <picture>
+      <source type="image/webp" srcset="assets/objects/webp/magnet-m4-yuzhou-480.webp 480w, assets/objects/webp/magnet-m4-yuzhou-800.webp 800w" sizes="(min-width: 900px) 118px, 100px">
+      <img class="obj-img" src="assets/objects/magnet-m4-yuzhou.png" width="1312" height="1303" alt="冰箱贴，宇宙探索编辑部" draggable="false">
+    </picture>
+  </button>
+  <button class="item item--obj item--mag item--m3" type="button" data-item="merch" style="--sw:948;--fx:458.0;--fy:687.8;--mx:2;--my:53;--dx:28;--dy:26;--rot:-1.6deg">
+    <picture>
+      <source type="image/webp" srcset="assets/objects/webp/magnet-m3-black-yellow-400.webp 400w, assets/objects/webp/magnet-m3-black-yellow-720.webp 720w" sizes="(min-width: 900px) 78px, 64px">
+      <img class="obj-img" src="assets/objects/magnet-m3-black-yellow.png" width="948" height="1340" alt="相框冰箱贴，黑黄款" draggable="false">
+    </picture>
+  </button>
 
-      <article class="card" data-tags="ops">
-        <div class="card__media"><span>作品图待补</span></div>
-        <div class="card__body">
-          <p class="card__meta"><span class="tag">运营</span>苏州大学 · 本科期间</p>
-          <h3>苏州大学本科招生账号</h3>
-          <dl class="card__dl">
-            <dt>背景</dt><dd>负责学校官方媒体平台“苏大本科招生”（微信公众号、视频号）和“苏州大学招生办”（哔哩哔哩）。</dd>
-            <dt>做了什么</dt><dd>三年内参与编辑数百篇公众号文章，策划系列推文创意；优化推文编辑流程，尝试长图文和SVG互动文章。</dd>
-            <dt>结果</dt><dd>公众号用户数接近10万；哔哩哔哩账号从无到有，参与发布视频200余件，播放量20余万；2020年录取通知书系列宣传登上微博热搜，相关公众号文章阅读量破5万。</dd>
-          </dl>
-          <ul class="card__nums"><li><b>近10万</b>公众号用户</li><li><b>200余件</b>B站视频</li></ul>
-        </div>
-      </article>
-
-    </div>
-    <p class="work__more">完整作品集暂用简历中的链接：<a href="https://reurl.cc/nYYyOD" target="_blank" rel="noopener">reurl.cc/nYYyOD</a></p>
-  </div>
-</section>
-
-<!-- 4 履历 -->
-<section class="timeline" id="timeline" aria-labelledby="tl-title">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="section-head__no">03</span>
-      <h2 id="tl-title">履历</h2>
-    </div>
-    <ol class="tl">
-      <li class="tl__item">
-        <p class="tl__date">2023.12至今</p>
-        <h3>小红书文娱账号“二流观众”</h3>
-        <p class="tl__role">独立运营，内容、图文设计与周边</p>
-      </li>
-      <li class="tl__item">
-        <p class="tl__date">2025.09至2025.10</p>
-        <h3>荣耀终端股份有限公司</h3>
-        <p class="tl__role">热点浏览器内容运营</p>
-      </li>
-      <li class="tl__item">
-        <p class="tl__date">2022.07至2025.05</p>
-        <h3>北京虎嗅信息科技股份有限公司</h3>
-        <p class="tl__role">内容运营</p>
-      </li>
-      <li class="tl__item">
-        <p class="tl__date">2020.10至2021.10</p>
-        <h3>苏州大学“苏小招”招生宣传志愿者协会</h3>
-        <p class="tl__role">会长。2021年带领协会成功申报苏州五星级学生社团；组织寒假回访高中母校活动，30个省份、1008所中学的5106名同学报名。</p>
-      </li>
-      <li class="tl__item">
-        <p class="tl__date">2018.09至2022.06</p>
-        <h3>苏州大学</h3>
-        <p class="tl__role">通信工程 本科。苏州大学2020年度优秀青年志愿者。</p>
-      </li>
-    </ol>
-  </div>
-</section>
-
-<!-- 5 技能 -->
-<section class="skills" id="skills" aria-labelledby="sk-title">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="section-head__no">04</span>
-      <h2 id="sk-title">工具和技能</h2>
-    </div>
-    <ul class="skill-grid" role="list">
-      <li class="skill"><b>Photoshop</b><span>图文排版、电商详情页、封面、SVG、图片处理</span></li>
-      <li class="skill"><b>剪映</b><span>剪辑、蒙版运镜、关键帧动画、音频分离</span></li>
-      <li class="skill"><b>Shapr3D</b><span>三维建模，从概念设计到可制造原型</span></li>
-      <li class="skill"><b>AI生图</b><span>豆包、Nano Banana、GPT、Recraft，提示词优化</span></li>
-      <li class="skill"><b>3D打印</b><span>周边打样与生产</span></li>
-      <li class="skill"><b>公众号编辑</b><span>135编辑器、秀米、创客贴</span></li>
-      <li class="skill"><b>Pr / C4D</b><span>Pr熟练，C4D掌握</span></li>
-      <li class="skill"><b>英语</b><span>CET-6</span></li>
-    </ul>
-  </div>
-</section>
-
-<!-- 6 联系 -->
-<section class="contact" id="contact" aria-labelledby="ct-title">
-  <div class="wrap">
-    <div class="section-head section-head--inv">
-      <span class="section-head__no">05</span>
-      <h2 id="ct-title">联系与合作</h2>
-    </div>
-    <p class="contact__lead">招聘和合作，都可以通过以下方式联系。</p>
-
-    <div class="contact__grid">
-      <div class="contact__box">
-        <p class="contact__label">邮箱</p>
-        <button type="button" class="contact__email" data-copy="" disabled>邮箱待确认</button>
-        <p class="contact__note">确认后点击即可复制</p>
-      </div>
-      <div class="contact__box">
-        <p class="contact__label">微信</p>
-        <div class="qr-slot" role="img" aria-label="微信二维码待补"><span>微信二维码<br>待补</span></div>
-      </div>
-    </div>
-
-    <p class="contact__label contact__label--mt">简历下载</p>
-    <div class="dl-row">
-      <a class="btn btn--inv is-disabled" aria-disabled="true" tabindex="-1">内容运营版 PDF<small>待补</small></a>
-      <a class="btn btn--inv is-disabled" aria-disabled="true" tabindex="-1">新媒体运营版 PDF<small>待补</small></a>
-      <a class="btn btn--inv is-disabled" aria-disabled="true" tabindex="-1">视觉设计版 PDF<small>待补</small></a>
-    </div>
-
-    <p class="contact__label contact__label--mt">平台</p>
-    <ul class="platforms" role="list">
-      <li><a href="https://www.xiaohongshu.com/user/profile/5f94220900000000010039cf" target="_blank" rel="noopener">小红书<small>二流观众</small></a></li>
-      <li><a href="https://m.okjike.com/users/d6f4612a-1024-4c9c-8fbe-d637015b8bdb" target="_blank" rel="noopener">即刻<small>dP狸</small></a></li>
-      <li><a href="#" class="is-todo">公众号<small>dP狸 · 链接待补</small></a></li>
-      <li><a href="#" class="is-todo">视频号<small>待补</small></a></li>
-      <li><a href="#" class="is-todo">抖音<small>待补</small></a></li>
-      <li><a href="#" class="is-todo">B站<small>待补</small></a></li>
-      <li><a href="#" class="is-todo">X<small>待补</small></a></li>
-    </ul>
-  </div>
-</section>
+  <p class="item item--foot" style="--mx:1;--my:81;--dx:2;--dy:35;--rot:0deg">
+    <span>© 2026 dP狸</span>
+    <span>chenzunhao.com</span>
+  </p>
 
 </main>
+</div>
 
-<footer class="foot">
-  <div class="wrap foot__in">
-    <span>© 2026 dP狸</span>
-    <a href="#top">回到顶部</a>
+<div class="lightbox" id="lightbox" hidden>
+  <div class="lightbox__dim" data-close="1"></div>
+  <div class="lightbox__panel" role="dialog" aria-modal="true" aria-labelledby="lb-title" tabindex="-1">
+    <button class="lightbox__close" type="button" data-close="1">关闭</button>
+    <div class="lightbox__visual" id="lb-visual"></div>
+    <h2 id="lb-title"></h2>
+    <p class="lightbox__meta" id="lb-meta"></p>
+    <div class="lightbox__body" id="lb-body"></div>
   </div>
-</footer>
+</div>
 
+<script type="application/json" id="details">
+{
+  "hint": {
+    "title": "怎么看这个主页",
+    "meta": "使用说明",
+    "html": "<p>点按洞洞板上的徽章、贴纸、标签或卡片，可以打开详情。</p><p>在电脑上按住物件可以拖动，松手后会吸到最近的孔位。手机上请直接点按，不要拖动，以免和滚动冲突。</p>"
+  },
+  "contact": {
+    "title": "联系与合作",
+    "meta": "邮箱待确认",
+    "html": "<p>招聘和合作，都可以通过邮件联系。</p><p>邮箱待确认，确认后会写在这张卡片上。微信二维码待补。</p><p>也可以先去小红书看「二流观众」，或在即刻找到 dP狸。</p><p><a href=\"https://www.xiaohongshu.com/user/profile/5f94220900000000010039cf\" target=\"_blank\" rel=\"noopener\">小红书</a>　<a href=\"https://m.okjike.com/users/d6f4612a-1024-4c9c-8fbe-d637015b8bdb\" target=\"_blank\" rel=\"noopener\">即刻</a></p>"
+  },
+  "huxiu": {
+    "title": "虎嗅APP 视频号",
+    "meta": "北京虎嗅信息科技股份有限公司 · 内容运营 · 2022.07至2025.05",
+    "html": "<p>参与「虎嗅APP」视频号运营策略制定与执行，负责期间粉丝增长80%，累计达84W。</p><p>独立策划「虎嗅APP」小红书图文板块，主导内容定位、形态设计和模板制定，图文平均点赞300+，受小红书产品部门邀请进行经验分享。</p><p>调研对标账号并制定运营策略，帮助多个账号由掉粉转为涨粉，「虎嗅APP」小红书账号调整后1个月内粉丝增长9400+。</p>"
+  },
+  "suhao": {
+    "title": "苏豪苏超",
+    "meta": "江苏苏豪数字科技有限公司 · 内容运营 · 2026.04至今",
+    "html": "<p>负责苏豪控股集团（2026苏超总冠名商）官方抖音账号「苏豪苏超」的短视频与直播运营。账号从0到55万+粉丝。</p><p>紧跟苏超赛程，围绕城市对阵、看台TIFO和球迷故事策划选题，独立策划制作短视频300+条，其中13条播放破十万，爆款累计播放253万+，最高单条33万。</p><p>负责每周多场直播的策划与执行，场均场观7000+。</p><p>代表作品：</p><ul class=\"works\"><li><a href=\"https://www.douyin.com/video/7642344770832453818\" target=\"_blank\" rel=\"noopener\">第一麻醉师 @董松</a>　33.2万</li><li><a href=\"https://www.douyin.com/video/7681915920701170289\" target=\"_blank\" rel=\"noopener\">今晚淮安没比赛</a>　32.3万</li><li><a href=\"https://www.douyin.com/video/7675363997378114661\" target=\"_blank\" rel=\"noopener\">南京0:1扬州</a>　26.9万</li><li><a href=\"https://www.douyin.com/video/7661266943349952890\" target=\"_blank\" rel=\"noopener\">十支球队完成闭环</a>　25.1万</li><li><a href=\"https://www.douyin.com/video/7674286975532186235\" target=\"_blank\" rel=\"noopener\">进球特效第三弹</a>　22.3万</li></ul><p><a href=\"https://www.douyin.com/user/MS4wLjABAAAAZ2EzA3Q-WJzNWJm-4WZUA18Y-pYJqYGM6X9rDTki-3Nwk-CpFr9gLwXadqLNbgBi\" target=\"_blank\" rel=\"noopener\">打开「苏豪苏超」抖音号</a></p>"
+  },
+  "honor": {
+    "title": "荣耀浏览器热点卡片",
+    "meta": "荣耀终端股份有限公司 · 热点浏览器内容运营 · 2025.09至2025.10",
+    "html": "<p>实时追踪各领域热点，策划浏览器信息流卡片与专题内容，负责全网热点和重要节点的多场景运营，热点响应时效控制在1小时内。</p><p>对内容库进行封面、标题精细化优化；调研5+主流商用免费图库与3类图片优化工具（含AI工具）并输出对比文档，落地后卡片配图高清率达100%。</p>"
+  },
+  "suda": {
+    "title": "苏州大学",
+    "meta": "通信工程 · 本科 · 2018.09至2022.06",
+    "html": "<p>就读于苏州大学通信工程专业，本科学历，2018.09至2022.06。</p>"
+  },
+  "xun": {
+    "title": "嗅一下",
+    "meta": "虎嗅短视频 IP · 2022.07至2025.05",
+    "html": "<p>重点运营「嗅一下」短视频IP，一个季度制作50条、爆款17条，完成度120%。平均播放量从8W提升至10W，最高单条180W+，成为账号涨粉主力IP。</p>"
+  },
+  "erliu": {
+    "title": "二流观众",
+    "meta": "小红书文娱账号 · 2023.12至今",
+    "html": "<p>独立打造的小红书文娱账号，围绕电影、音乐、文化做图文卡片和内容运营。粉丝6000+，获赞与收藏10W+，多篇笔记点赞1W+；与腾讯音乐合作14条内容。</p><p>「年少日记」系列获电影官方关注并转发。</p><p><a href=\"https://www.xiaohongshu.com/user/profile/5f94220900000000010039cf\" target=\"_blank\" rel=\"noopener\">去小红书看「二流观众」</a></p>"
+  },
+  "poster": {
+    "title": "金句海报",
+    "meta": "视觉设计 · 占位",
+    "html": "<p>这个画框是占位，用来预留视觉设计作品的位置。正式上线前会换成真实海报。</p>"
+  },
+  "skills": {
+    "title": "工具和技能",
+    "meta": "内容运营 · 新媒体运营 · 视觉设计",
+    "html": "<p>常用工具包括 Photoshop、剪映、Shapr3D，以及 AI 生图。</p><p>Photoshop 用于图文排版与图片处理；剪映用于日常剪辑、蒙版运镜、关键帧动画和音频分离；Shapr3D 用于从概念设计到可制造原型的三维建模。</p>"
+  },
+  "merch": {
+    "title": "原创周边",
+    "meta": "二流观众 · 3D 打印冰箱贴",
+    "html": "<p>为「二流观众」独立完成原创周边的3D设计、打样生产、包装和电商详情页，并在小红书开设店铺。店铺销量1000+单，其中「好东西」系列冰箱贴400件+。</p><p>板上这组冰箱贴每款留了一件：「我正直勇敢有阅读量」、「还有明天」、「宇宙探索编辑部」，以及一枚相框造型。</p>"
+  }
+}
+</script>
 <script src="js/main.js"></script>
 </body>
 </html>

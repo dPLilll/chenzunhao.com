@@ -1,0 +1,435 @@
+{
+  "rule": "Pick 4:3 if |w/h-4/3| <= |w/h-3/4|, else 3:4. Measured from local JPEG covers.",
+  "covers": {
+    "assets/works/covers/2247484940.jpg": {
+      "w": 960,
+      "h": 960,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/2247484935.jpg": {
+      "w": 960,
+      "h": 960,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/2247484781.jpg": {
+      "w": 960,
+      "h": 960,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/2247485453.jpg": {
+      "w": 719,
+      "h": 960,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/a26.jpg": {
+      "w": 960,
+      "h": 960,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/2247485048.jpg": {
+      "w": 960,
+      "h": 960,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/2247484997.jpg": {
+      "w": 307,
+      "h": 307,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/2247484990.jpg": {
+      "w": 945,
+      "h": 945,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/2247484324.jpg": {
+      "w": 960,
+      "h": 960,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/2247485120.jpg": {
+      "w": 960,
+      "h": 960,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/2247484945.jpg": {
+      "w": 959,
+      "h": 960,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/2247484792.jpg": {
+      "w": 960,
+      "h": 540,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/2247484225.jpg": {
+      "w": 960,
+      "h": 540,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/2247484226.jpg": {
+      "w": 960,
+      "h": 540,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/2247484233.jpg": {
+      "w": 960,
+      "h": 540,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/2247484234.jpg": {
+      "w": 960,
+      "h": 540,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/2247484223.jpg": {
+      "w": 960,
+      "h": 540,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/2247484237.jpg": {
+      "w": 960,
+      "h": 540,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/2247484312.jpg": {
+      "w": 960,
+      "h": 540,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/a24.jpg": {
+      "w": 960,
+      "h": 540,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/a27.jpg": {
+      "w": 960,
+      "h": 540,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/2247485254.jpg": {
+      "w": 960,
+      "h": 408,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/2247485239.jpg": {
+      "w": 960,
+      "h": 408,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/2247485193.jpg": {
+      "w": 960,
+      "h": 959,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/2247485184.jpg": {
+      "w": 960,
+      "h": 959,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/2247485179.jpg": {
+      "w": 449,
+      "h": 448,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/2247485160.jpg": {
+      "w": 651,
+      "h": 651,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/2247485145.jpg": {
+      "w": 960,
+      "h": 960,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/2247485137.jpg": {
+      "w": 960,
+      "h": 959,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/2247485130.jpg": {
+      "w": 959,
+      "h": 960,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/2247485108.jpg": {
+      "w": 538,
+      "h": 538,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/2247485099.jpg": {
+      "w": 960,
+      "h": 960,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/2247485087.jpg": {
+      "w": 500,
+      "h": 500,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/2247485076.jpg": {
+      "w": 758,
+      "h": 759,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/2247485060.jpg": {
+      "w": 611,
+      "h": 611,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/2247485014.jpg": {
+      "w": 805,
+      "h": 805,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/2247484309.jpg": {
+      "w": 900,
+      "h": 382,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/2247484305.jpg": {
+      "w": 897,
+      "h": 383,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/2247484278.jpg": {
+      "w": 960,
+      "h": 408,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/2247484299.jpg": {
+      "w": 960,
+      "h": 408,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/2247484261.jpg": {
+      "w": 960,
+      "h": 408,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/2247484308.jpg": {
+      "w": 960,
+      "h": 408,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/2247484304.jpg": {
+      "w": 900,
+      "h": 382,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/2247484306.jpg": {
+      "w": 900,
+      "h": 382,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/2247484301.jpg": {
+      "w": 897,
+      "h": 383,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/BV1Sa4y1D7oh.jpg": {
+      "w": 995,
+      "h": 622,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/BV1wX4y1E7Mz.jpg": {
+      "w": 1080,
+      "h": 675,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/BV16g411m7Jd.jpg": {
+      "w": 1080,
+      "h": 675,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/BV1pe4y1C7Ej.jpg": {
+      "w": 1080,
+      "h": 675,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/BV15g411y7iE.jpg": {
+      "w": 1728,
+      "h": 1080,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/BV1FY4y1E7GK.jpg": {
+      "w": 1080,
+      "h": 675,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/BV1qg411Q7z1.jpg": {
+      "w": 1080,
+      "h": 675,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/BV1M5411R7yf.jpg": {
+      "w": 1080,
+      "h": 675,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/BV1Ev411E77j.jpg": {
+      "w": 1728,
+      "h": 1080,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/BV1fA411K7wL.jpg": {
+      "w": 1728,
+      "h": 1080,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/BV11t4y167ai.jpg": {
+      "w": 1280,
+      "h": 800,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/BV1BV41127Sv.jpg": {
+      "w": 1348,
+      "h": 843,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/BV1NK4y1h72Y.jpg": {
+      "w": 1100,
+      "h": 687,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/BV1bD4y1o7Lx.jpg": {
+      "w": 1200,
+      "h": 750,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/BV1Na4y1j7F3.jpg": {
+      "w": 1728,
+      "h": 1080,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/BV1Kt4y1D7Lt.jpg": {
+      "w": 1392,
+      "h": 870,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/BV1pj411f71g.jpg": {
+      "w": 850,
+      "h": 478,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/BV167411E74Y.jpg": {
+      "w": 1728,
+      "h": 1080,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/BV1j7411s7ZW.jpg": {
+      "w": 1728,
+      "h": 1080,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/BV1w7411B7PB.jpg": {
+      "w": 1728,
+      "h": 1080,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/douyin-7691250976342918513.jpg": {
+      "w": 323,
+      "h": 430,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/douyin-7681915920701170289.jpg": {
+      "w": 323,
+      "h": 430,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/douyin-7677623833742737509.jpg": {
+      "w": 323,
+      "h": 430,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/douyin-7677620637993377125.jpg": {
+      "w": 323,
+      "h": 430,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/douyin-7676116324573424229.jpg": {
+      "w": 323,
+      "h": 430,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/douyin-7675749016717517297.jpg": {
+      "w": 323,
+      "h": 430,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/douyin-7675363997378114661.jpg": {
+      "w": 323,
+      "h": 430,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/douyin-7674644269462477553.jpg": {
+      "w": 323,
+      "h": 430,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/douyin-7674286975532186235.jpg": {
+      "w": 323,
+      "h": 430,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/douyin-7673502431578645989.jpg": {
+      "w": 323,
+      "h": 430,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/douyin-7662770981199784357.jpg": {
+      "w": 323,
+      "h": 430,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/douyin-7661266943349952890.jpg": {
+      "w": 323,
+      "h": 430,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/douyin-7642344770832453818.jpg": {
+      "w": 323,
+      "h": 430,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/douyin-7454490980100738358.jpg": {
+      "w": 323,
+      "h": 430,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/douyin-7452939480689855783.jpg": {
+      "w": 323,
+      "h": 430,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/douyin-7429288400596782345.jpg": {
+      "w": 323,
+      "h": 430,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/douyin-7419275394823556362.jpg": {
+      "w": 323,
+      "h": 430,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/douyin-7414445715436440843.jpg": {
+      "w": 323,
+      "h": 430,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/douyin-7408134106682297611.jpg": {
+      "w": 323,
+      "h": 430,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/douyin-7400362945705741622.jpg": {
+      "w": 323,
+      "h": 430,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/douyin-7392912205089410316.jpg": {
+      "w": 323,
+      "h": 430,
+      "ratio": "3:4"
+    }
+  }
+}
