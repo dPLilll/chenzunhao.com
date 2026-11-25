@@ -42,14 +42,25 @@
     lbMeta.textContent = data.meta || "";
     lbBody.innerHTML = data.html || "";
     lbVisual.innerHTML = "";
-    const face = btn.querySelector(".name-sign, picture, .obj-img, .hint, .work, .card, .tags");
-    if (face) {
-      const clone = face.cloneNode(true);
-      clone.querySelectorAll("[aria-hidden]").forEach((n) => n.remove());
-      lbVisual.appendChild(clone);
+    if (id === "skills") {
+      const row = document.createElement("div");
+      row.className = "skills-lb";
+      board.querySelectorAll('[data-item="skills"]').forEach((el) => {
+        const face = el.querySelector("picture, .obj-img");
+        if (face) row.appendChild(face.cloneNode(true));
+      });
+      lbVisual.appendChild(row);
       lbVisual.hidden = false;
     } else {
-      lbVisual.hidden = true;
+      const face = btn.querySelector(".contact-face, .name-sign, picture, .obj-img, .hint, .work, .card, .tags");
+      if (face) {
+        const clone = face.cloneNode(true);
+        clone.querySelectorAll("[aria-hidden]").forEach((n) => n.remove());
+        lbVisual.appendChild(clone);
+        lbVisual.hidden = false;
+      } else {
+        lbVisual.hidden = true;
+      }
     }
     btn.classList.add("is-open");
     lightbox.hidden = false;
@@ -60,6 +71,7 @@
   }
 
   function closeLightbox() {
+    closeImageGallery();
     closeVideoPlayer();
     lightbox.hidden = true;
     lightbox.classList.remove("is-on");
@@ -77,22 +89,41 @@
       closeVideoPlayer();
       return;
     }
+    if (e.target.closest("[data-gallery-close]")) {
+      closeImageGallery();
+      return;
+    }
+    if (e.target.closest("[data-gallery-prev]")) {
+      stepGallery(-1);
+      return;
+    }
+    if (e.target.closest("[data-gallery-next]")) {
+      stepGallery(1);
+      return;
+    }
     if (e.target.closest("[data-close]")) {
-      if (isVideoPlayerOpen()) closeVideoPlayer();
+      if (isImageGalleryOpen()) closeImageGallery();
+      else if (isVideoPlayerOpen()) closeVideoPlayer();
       else closeLightbox();
     }
   });
   document.addEventListener("keydown", (e) => {
     if (e.key === "Tab" && !lightbox.hidden) {
-      const root = isVideoPlayerOpen() ? videoPlayer : panel;
+      const root = isImageGalleryOpen() ? imageGallery : (isVideoPlayerOpen() ? videoPlayer : panel);
       const focusable = [...root.querySelectorAll('button, a[href], [tabindex]:not([tabindex="-1"])')].filter((el) => !el.hidden && el.closest("[hidden]") == null);
       if (!focusable.length) { e.preventDefault(); root.focus(); }
       else if (e.shiftKey && (document.activeElement === focusable[0] || document.activeElement === root)) { e.preventDefault(); focusable[focusable.length - 1].focus(); }
       else if (!e.shiftKey && document.activeElement === focusable[focusable.length - 1]) { e.preventDefault(); focusable[0].focus(); }
     }
+    if ((e.key === "ArrowLeft" || e.key === "ArrowRight") && isImageGalleryOpen()) {
+      e.preventDefault();
+      stepGallery(e.key === "ArrowRight" ? 1 : -1);
+      return;
+    }
     if (e.key === "Escape" && !lightbox.hidden) {
       e.preventDefault();
-      if (isVideoPlayerOpen()) closeVideoPlayer();
+      if (isImageGalleryOpen()) closeImageGallery();
+      else if (isVideoPlayerOpen()) closeVideoPlayer();
       else closeLightbox();
     }
   });
@@ -276,12 +307,16 @@
 
   function workCard(item) {
     const playEmbed = item.play === "embed" && item.embed;
-    const hasLink = !!item.link && !playEmbed;
-    const el = document.createElement(playEmbed ? "button" : (hasLink ? "a" : "article"));
+    const hasGallery = item.open === "gallery" || Array.isArray(item.gallery);
+    const hasLink = !!item.link && !playEmbed && !hasGallery;
+    const el = document.createElement(playEmbed || hasGallery ? "button" : (hasLink ? "a" : "article"));
     el.className = "work";
     if (playEmbed) {
       el.type = "button";
       el.addEventListener("click", () => openVideoPlayer(item));
+    } else if (hasGallery) {
+      el.type = "button";
+      el.addEventListener("click", () => openImageGallery(item));
     } else if (hasLink) {
       el.href = item.link;
       el.target = "_blank";
@@ -363,6 +398,9 @@
   let coverAspects = {};
   let videoPlayer = null;
   let videoPlayerFocus = null;
+  let imageGallery = null;
+  let imageGalleryFocus = null;
+  let galleryState = null;
 
   function isGroupedCatalog(list) {
     return list && !Array.isArray(list) && Array.isArray(list.groups);
@@ -431,7 +469,7 @@
     const tablist = document.createElement("div");
     tablist.className = "works-tabs";
     tablist.setAttribute("role", "tablist");
-    tablist.setAttribute("aria-label", "视频分类");
+    tablist.setAttribute("aria-label", catalog.tablistLabel || "分类");
     const stage = document.createElement("div");
     stage.className = "works-tab-stage";
     let current = catalog.defaultGroup || (catalog.groups[0] && catalog.groups[0].id);
@@ -549,6 +587,230 @@
     videoPlayerFocus = null;
   }
 
+
+  function isImageGalleryOpen() {
+    return !!(imageGallery && !imageGallery.hidden);
+  }
+
+  function ensureImageGallery() {
+    if (imageGallery) return imageGallery;
+    const root = document.createElement("div");
+    root.className = "image-gallery";
+    root.hidden = true;
+    root.innerHTML = '<div class="image-gallery__dim" data-gallery-close="1"></div>'
+      + '<div class="image-gallery__sheet" role="dialog" aria-modal="true" aria-labelledby="image-gallery-title" tabindex="-1">'
+      + '<div class="image-gallery__bar">'
+      + '<button class="image-gallery__back" type="button" data-gallery-close="1">返回</button>'
+      + '<a class="image-gallery__ext" target="_blank" rel="noopener">查看原文</a>'
+      + '</div>'
+      + '<h3 class="image-gallery__title" id="image-gallery-title"></h3>'
+      + '<p class="image-gallery__meta"></p>'
+      + '<div class="image-gallery__stage">'
+      + '<button class="image-gallery__nav image-gallery__prev" type="button" data-gallery-prev="1" aria-label="上一张">‹</button>'
+      + '<img alt="">'
+      + '<button class="image-gallery__nav image-gallery__next" type="button" data-gallery-next="1" aria-label="下一张">›</button>'
+      + '</div>'
+      + '<p class="image-gallery__miss" hidden></p>'
+      + '<p class="image-gallery__credit"></p>'
+      + '</div>';
+    lightbox.appendChild(root);
+    const stage = root.querySelector(".image-gallery__stage");
+    let touchX = null;
+    stage.addEventListener("touchstart", (e) => {
+      if (e.changedTouches && e.changedTouches[0]) touchX = e.changedTouches[0].clientX;
+    }, { passive: true });
+    stage.addEventListener("touchend", (e) => {
+      if (touchX == null || !e.changedTouches || !e.changedTouches[0]) return;
+      const dx = e.changedTouches[0].clientX - touchX;
+      touchX = null;
+      if (Math.abs(dx) < 40) return;
+      stepGallery(dx < 0 ? 1 : -1);
+    }, { passive: true });
+    imageGallery = root;
+    return root;
+  }
+
+  function renderGallerySlide() {
+    if (!imageGallery || !galleryState) return;
+    const { item, index } = galleryState;
+    const images = item.gallery || [];
+    const img = imageGallery.querySelector(".image-gallery__stage img");
+    const prev = imageGallery.querySelector("[data-gallery-prev]");
+    const next = imageGallery.querySelector("[data-gallery-next]");
+    const meta = imageGallery.querySelector(".image-gallery__meta");
+    const miss = imageGallery.querySelector(".image-gallery__miss");
+    if (!images.length) {
+      img.removeAttribute("src");
+      img.alt = "";
+      img.hidden = true;
+      prev.hidden = true;
+      next.hidden = true;
+    } else {
+      img.hidden = false;
+      prev.hidden = images.length < 2;
+      next.hidden = images.length < 2;
+      img.src = images[index];
+      img.alt = (item.title || "") + (images.length > 1 ? "（" + (index + 1) + " / " + images.length + "）" : "");
+      prev.disabled = index <= 0;
+      next.disabled = index >= images.length - 1;
+    }
+    const bits = [];
+    if (item.date) bits.push(item.date);
+    if (images.length) bits.push((index + 1) + " / " + images.length);
+    meta.textContent = bits.join("  ·  ");
+    const missing = item.galleryMissing || 0;
+    if (!images.length) {
+      miss.hidden = false;
+      miss.textContent = "这篇作品的原文图片没能完整取到，页面不会改用单张封面顶替。";
+    } else if (missing > 0) {
+      miss.hidden = false;
+      miss.textContent = "已显示本地取到的 " + images.length + " 张原文图，另有 " + missing + " 张未能下载。";
+    } else {
+      miss.hidden = true;
+      miss.textContent = "";
+    }
+  }
+
+  function stepGallery(delta) {
+    if (!galleryState) return;
+    const images = galleryState.item.gallery || [];
+    if (images.length < 2) return;
+    const next = galleryState.index + delta;
+    if (next < 0 || next >= images.length) return;
+    galleryState.index = next;
+    renderGallerySlide();
+  }
+
+  function openImageGallery(item, startIndex) {
+    const root = ensureImageGallery();
+    const sheet = root.querySelector(".image-gallery__sheet");
+    const title = root.querySelector(".image-gallery__title");
+    const ext = root.querySelector(".image-gallery__ext");
+    const credit = root.querySelector(".image-gallery__credit");
+    title.textContent = item.title || "";
+    const src = item.sourceLink || item.link;
+    if (src) {
+      ext.hidden = false;
+      ext.href = src;
+      ext.textContent = item.sourceLabel || "查看原文";
+    } else {
+      ext.hidden = true;
+      ext.removeAttribute("href");
+    }
+    credit.textContent = item.attribution || item.credit || "";
+    const images = item.gallery || [];
+    const index = Math.max(0, Math.min(images.length ? images.length - 1 : 0, startIndex || 0));
+    galleryState = { item: item, index: index };
+    renderGallerySlide();
+    imageGalleryFocus = document.activeElement;
+    root.hidden = false;
+    lightbox.classList.add("is-gallery");
+    sheet.focus({ preventScroll: true });
+  }
+
+  function closeImageGallery() {
+    if (!imageGallery || imageGallery.hidden) {
+      lightbox.classList.remove("is-gallery");
+      return;
+    }
+    const img = imageGallery.querySelector(".image-gallery__stage img");
+    if (img) {
+      img.removeAttribute("src");
+      img.alt = "";
+    }
+    imageGallery.hidden = true;
+    lightbox.classList.remove("is-gallery");
+    galleryState = null;
+    if (imageGalleryFocus && typeof imageGalleryFocus.focus === "function") {
+      imageGalleryFocus.focus({ preventScroll: true });
+    }
+    imageGalleryFocus = null;
+  }
+
+
+  function renderPrintModels(merch) {
+    const wrap = document.createElement("div");
+    wrap.className = "print-models";
+    const heading = document.createElement("h3");
+    heading.className = "print-models__heading";
+    heading.textContent = "打印实物";
+    wrap.appendChild(heading);
+    const lead = document.createElement("p");
+    lead.className = "print-models__lead";
+    lead.textContent = merch.heroLead || merch.note || "";
+    wrap.appendChild(lead);
+    const row = document.createElement("div");
+    row.className = "print-models__row";
+    (merch.models || []).forEach((model, index) => {
+      const cell = document.createElement("div");
+      cell.className = "print-models__cell";
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "print-models__item";
+      btn.addEventListener("click", () => openImageGallery(merch, index));
+      if (model.src) {
+        const pic = document.createElement("picture");
+        if (model.webp) {
+          const srcEl = document.createElement("source");
+          srcEl.type = "image/webp";
+          srcEl.srcset = model.webp;
+          pic.appendChild(srcEl);
+        }
+        const img = document.createElement("img");
+        img.src = model.src;
+        img.alt = model.title || merch.title || "";
+        img.width = 320;
+        img.height = 320;
+        pic.appendChild(img);
+        btn.appendChild(pic);
+      }
+      if (model.title) {
+        const cap = document.createElement("span");
+        cap.textContent = model.title;
+        btn.appendChild(cap);
+      }
+      cell.appendChild(btn);
+      if (model.link) {
+        const ext = document.createElement("a");
+        ext.className = "print-models__ext";
+        ext.href = model.link;
+        ext.target = "_blank";
+        ext.rel = "noopener";
+        ext.textContent = "在 MakerWorld 查看";
+        cell.appendChild(ext);
+      }
+      row.appendChild(cell);
+    });
+    wrap.appendChild(row);
+    return wrap;
+  }
+
+  function renderPrintCategory(container, list, tab) {
+    const merch = list.find((item) => Array.isArray(item.models) && item.models.length);
+    const rest = merch ? list.filter((item) => item !== merch) : list;
+    const frag = document.createDocumentFragment();
+    if (tab && tab.intro) {
+      const intro = document.createElement("p");
+      intro.className = "print-models__lead";
+      intro.textContent = tab.intro;
+      frag.appendChild(intro);
+    }
+    if (rest.length) {
+      const grid = document.createElement("div");
+      grid.className = "category-grid";
+      const cards = rest.map((item) => workCard(item));
+      grid._masonryCards = cards;
+      packMasonry(grid, cards, false);
+      frag.appendChild(grid);
+      requestAnimationFrame(() => {
+        if (!container.contains(grid)) return;
+        packMasonry(grid, cards, true);
+      });
+    }
+    if (merch) frag.appendChild(renderPrintModels(merch));
+    container.replaceChildren(frag);
+  }
+
   function openWorks(id) {
     const trigger = board.querySelector('[data-works="' + id + '"]')
       || (["posts", "reviews", "推文", "影评"].includes(id) ? board.querySelector('[data-works="articles"]') : null);
@@ -586,6 +848,8 @@
       const list = data.items[tab.key] || [];
       if (isGroupedCatalog(list)) {
         renderCatalog(lbBody, list);
+      } else if (tab.id === "print") {
+        renderPrintCategory(lbBody, list, tab);
       } else {
         const grid = document.createElement("div");
         grid.className = "category-grid";

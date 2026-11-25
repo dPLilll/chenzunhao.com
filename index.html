@@ -32,10 +32,13 @@
   </button>
 
   <button class="item item--obj item--contact" type="button" data-item="contact" style="--sw:1496;--fx:711.50;--fy:39.50;--mx:4;--my:13;--dx:11;--dy:15;--rot:-2.0deg">
-    <picture>
-      <source type="image/webp" srcset="assets/objects/webp/contact-card-clip-600.webp 600w, assets/objects/webp/contact-card-clip-1000.webp 1000w" sizes="(min-width: 900px) 200px, 170px">
-      <img class="obj-img" src="assets/objects/contact-card-clip.png" width="1496" height="1192" alt="联系卡片，邮箱待填写" draggable="false">
-    </picture>
+    <div class="contact-face">
+      <picture>
+        <source type="image/webp" srcset="assets/objects/webp/contact-card-clip-600.webp 600w, assets/objects/webp/contact-card-clip-1000.webp 1000w" sizes="(min-width: 900px) 200px, 170px">
+        <img class="obj-img" src="assets/objects/contact-card-clip.png" width="1496" height="1192" alt="联系卡片，邮箱 ali13893309735@163.com" draggable="false">
+      </picture>
+      <span class="contact-email">ali13893309735@163.com</span>
+    </div>
   </button>
 
   <button class="item item--obj item--huxiu" type="button" data-item="huxiu" style="--sw:1404;--fx:656.5;--fy:656.3;--mx:13;--my:17;--dx:12;--dy:2;--rot:1.6deg">
@@ -73,7 +76,7 @@
     </picture>
   </button>
 
-  <button class="item item--obj item--erliu" type="button" data-item="erliu" style="--sw:1329;--fx:635.9;--fy:598.0;--mx:3;--my:38;--dx:44;--dy:26;--rot:2.8deg">
+  <button class="item item--obj item--erliu" type="button" data-item="erliu" style="--sw:1329;--fx:635.9;--fy:598.0;--mx:3;--my:38;--dx:48;--dy:26;--rot:2.8deg">
     <picture>
       <source type="image/webp" srcset="assets/objects/webp/audience2-sticker-480.webp 480w, assets/objects/webp/audience2-sticker-880.webp 880w" sizes="(min-width: 900px) 144px, 108px">
       <img class="obj-img" src="assets/objects/audience2-sticker.png" width="1329" height="1241" alt="二流观众贴纸" draggable="false">
@@ -88,67 +91,89 @@
   </button>
 
 
-  <button class="item item--obj item--badge item--badge-video" type="button" data-works="video" data-drag="1" aria-label="视频" style="--sw:1000;--fx:494.5;--fy:510.0;--mx:4;--my:61;--dx:3;--dy:11;--rot:-2deg">
+  <button class="item item--obj item--badge item--badge-video" type="button" data-works="video" data-drag="1" aria-label="视频" style="--sw:1000;--fx:494.5;--fy:510.0;--mx:4;--my:49;--dx:3;--dy:11;--rot:-2deg">
     <picture>
       <source type="image/webp" srcset="assets/objects/webp/badge-video-480.webp 480w, assets/objects/webp/badge-video-880.webp 880w" sizes="(min-width: 900px) 131px, 98px">
       <img class="obj-img" src="assets/objects/badge-video.png" width="1000" height="1039" alt="视频" draggable="false">
     </picture>
     <span class="badge-label">视频</span>
   </button>
-  <button class="item item--obj item--badge item--badge-design" type="button" data-works="design" data-drag="1" aria-label="平面设计" style="--sw:952;--fx:476.0;--fy:430.5;--mx:14;--my:61;--dx:19;--dy:4;--rot:2deg">
+  <button class="item item--obj item--badge item--badge-design" type="button" data-works="design" data-drag="1" aria-label="平面设计" style="--sw:952;--fx:476.0;--fy:430.5;--mx:14;--my:49;--dx:19;--dy:4;--rot:2deg">
     <picture>
       <source type="image/webp" srcset="assets/objects/webp/badge-design-480.webp 480w, assets/objects/webp/badge-design-880.webp 880w" sizes="(min-width: 900px) 135px, 101px">
       <img class="obj-img" src="assets/objects/badge-design.png" width="952" height="873" alt="平面设计" draggable="false">
     </picture>
     <span class="badge-label">平面设计</span>
   </button>
-  <button class="item item--obj item--badge item--badge-articles" type="button" data-works="articles" data-drag="1" aria-label="文章" style="--sw:950;--fx:475.0;--fy:492.0;--mx:4;--my:70;--dx:47;--dy:8;--rot:-1deg">
+  <button class="item item--obj item--badge item--badge-articles" type="button" data-works="articles" data-drag="1" aria-label="文章" style="--sw:950;--fx:475.0;--fy:492.0;--mx:4;--my:58;--dx:47;--dy:8;--rot:-1deg">
     <picture>
       <source type="image/webp" srcset="assets/objects/webp/badge-articles-480.webp 480w, assets/objects/webp/badge-articles-880.webp 880w" sizes="(min-width: 900px) 130px, 97px">
       <img class="obj-img" src="assets/objects/badge-articles.png" width="950" height="1012" alt="文章" draggable="false">
     </picture>
     <span class="badge-label">文章</span>
   </button>
-  <button class="item item--obj item--badge item--badge-photos" type="button" data-works="photos" data-drag="1" aria-label="摄影" style="--sw:1048;--fx:513.5;--fy:340.5;--mx:14;--my:70;--dx:18;--dy:25;--rot:1deg">
+  <button class="item item--obj item--badge item--badge-photos" type="button" data-works="photos" data-drag="1" aria-label="摄影" style="--sw:1048;--fx:513.5;--fy:340.5;--mx:14;--my:58;--dx:8;--dy:25;--rot:1deg">
     <picture>
       <source type="image/webp" srcset="assets/objects/webp/badge-photos-480.webp 480w, assets/objects/webp/badge-photos-880.webp 880w" sizes="(min-width: 900px) 136px, 102px">
       <img class="obj-img" src="assets/objects/badge-photos.png" width="1048" height="710" alt="摄影" draggable="false">
     </picture>
     <span class="badge-label">摄影</span>
   </button>
-  <button class="item item--obj item--skills-set" type="button" data-item="skills" style="--sw:4783;--fx:65.87;--fy:73.16;--mx:0;--my:77;--dx:12;--dy:31;--rot:0deg">
+  <button class="item item--obj item--badge item--badge-3dprint" type="button" data-works="print" data-drag="1" aria-label="3D 打印" style="--sw:1024;--fx:512;--fy:530;--mx:9;--my:67;--dx:30;--dy:26;--rot:1.2deg">
     <picture>
-      <source type="image/webp" srcset="assets/objects/webp/skill-tags-hook-set-acrylic-1200.webp 1200w, assets/objects/webp/skill-tags-hook-set-acrylic-2000.webp 2000w" sizes="(min-width: 900px) 770px, 352px">
-      <img class="obj-img" src="assets/objects/skill-tags-hook-set-acrylic.png" width="4783" height="419" alt="技能标签挂条" draggable="false">
+      <source type="image/webp" srcset="assets/objects/webp/badge-3dprint-480.webp 480w, assets/objects/webp/badge-3dprint-880.webp 880w" sizes="(min-width: 900px) 134px, 101px">
+      <img class="obj-img" src="assets/objects/badge-3dprint.png" width="1024" height="1024" alt="3D 打印" draggable="false">
+    </picture>
+    <span class="badge-label">3D 打印</span>
+  </button>
+  <button class="item item--obj item--skill item--skill-tag" type="button" data-item="skills" data-drag="1" aria-label="内容运营" style="--sw:1325;--fx:643;--fy:188;--mx:1;--my:84;--dx:6;--dy:31;--rot:-1.6deg">
+    <picture>
+      <source type="image/webp" srcset="assets/objects/webp/skill-tag-content-ops-hang-480.webp 480w, assets/objects/webp/skill-tag-content-ops-hang-880.webp 880w" sizes="(min-width: 900px) 124px, 84px">
+      <img class="obj-img" src="assets/objects/skill-tag-content-ops-hang.png" width="1325" height="626" alt="内容运营" draggable="false">
+    </picture>
+  </button>
+  <button class="item item--obj item--skill item--skill-tag" type="button" data-item="skills" data-drag="1" aria-label="新媒体运营" style="--sw:1325;--fx:643;--fy:188;--mx:6;--my:84;--dx:14;--dy:31;--rot:1.2deg">
+    <picture>
+      <source type="image/webp" srcset="assets/objects/webp/skill-tag-new-media-ops-hang-480.webp 480w, assets/objects/webp/skill-tag-new-media-ops-hang-880.webp 880w" sizes="(min-width: 900px) 124px, 84px">
+      <img class="obj-img" src="assets/objects/skill-tag-new-media-ops-hang.png" width="1325" height="626" alt="新媒体运营" draggable="false">
+    </picture>
+  </button>
+  <button class="item item--obj item--skill item--skill-tag" type="button" data-item="skills" data-drag="1" aria-label="视觉设计" style="--sw:1325;--fx:643;--fy:188;--mx:11;--my:84;--dx:22;--dy:31;--rot:-0.8deg">
+    <picture>
+      <source type="image/webp" srcset="assets/objects/webp/skill-tag-visual-design-hang-480.webp 480w, assets/objects/webp/skill-tag-visual-design-hang-880.webp 880w" sizes="(min-width: 900px) 124px, 84px">
+      <img class="obj-img" src="assets/objects/skill-tag-visual-design-hang.png" width="1325" height="626" alt="视觉设计" draggable="false">
+    </picture>
+  </button>
+  <button class="item item--obj item--skill item--app-tile" type="button" data-item="skills" data-drag="1" aria-label="Photoshop" style="--sw:650;--fx:304;--fy:72;--mx:3;--my:76;--dx:30;--dy:31;--rot:-1.4deg">
+    <picture>
+      <source type="image/webp" srcset="assets/objects/webp/app-tile-photoshop-480.webp 480w, assets/objects/webp/app-tile-photoshop-880.webp 880w" sizes="(min-width: 900px) 92px, 72px">
+      <img class="obj-img" src="assets/objects/app-tile-photoshop.png" width="650" height="724" alt="Photoshop" draggable="false">
+    </picture>
+    <span class="badge-label">Photoshop</span>
+  </button>
+  <button class="item item--obj item--skill item--app-tile" type="button" data-item="skills" data-drag="1" aria-label="剪映" style="--sw:650;--fx:304;--fy:72;--mx:8;--my:76;--dx:38;--dy:31;--rot:1.6deg">
+    <picture>
+      <source type="image/webp" srcset="assets/objects/webp/app-tile-jianying-480.webp 480w, assets/objects/webp/app-tile-jianying-880.webp 880w" sizes="(min-width: 900px) 92px, 72px">
+      <img class="obj-img" src="assets/objects/app-tile-jianying.png" width="650" height="724" alt="剪映" draggable="false">
+    </picture>
+    <span class="badge-label">剪映</span>
+  </button>
+  <button class="item item--obj item--skill item--app-tile" type="button" data-item="skills" data-drag="1" aria-label="Shapr3D" style="--sw:650;--fx:304;--fy:72;--mx:13;--my:76;--dx:46;--dy:31;--rot:-1.1deg">
+    <picture>
+      <source type="image/webp" srcset="assets/objects/webp/app-tile-shapr3d-480.webp 480w, assets/objects/webp/app-tile-shapr3d-880.webp 880w" sizes="(min-width: 900px) 92px, 72px">
+      <img class="obj-img" src="assets/objects/app-tile-shapr3d.png" width="650" height="724" alt="Shapr3D" draggable="false">
+    </picture>
+    <span class="badge-label">Shapr3D</span>
+  </button>
+  <button class="item item--obj item--skill item--skill-tag" type="button" data-item="skills" data-drag="1" aria-label="AI 生图" style="--sw:1325;--fx:643;--fy:188;--mx:16;--my:84;--dx:54;--dy:31;--rot:1.0deg">
+    <picture>
+      <source type="image/webp" srcset="assets/objects/webp/skill-tag-ai-image-hang-480.webp 480w, assets/objects/webp/skill-tag-ai-image-hang-880.webp 880w" sizes="(min-width: 900px) 124px, 84px">
+      <img class="obj-img" src="assets/objects/skill-tag-ai-image-hang.png" width="1325" height="626" alt="AI 生图" draggable="false">
     </picture>
   </button>
 
-  <button class="item item--obj item--mag item--m1" type="button" data-item="merch" style="--sw:1321;--fx:561.3;--fy:633.5;--mx:3;--my:47;--dx:6;--dy:25;--rot:-2.6deg">
-    <picture>
-      <source type="image/webp" srcset="assets/objects/webp/magnet-m1-brave-480.webp 480w, assets/objects/webp/magnet-m1-brave-800.webp 800w" sizes="(min-width: 900px) 118px, 100px">
-      <img class="obj-img" src="assets/objects/magnet-m1-brave.png" width="1321" height="1256" alt="冰箱贴，我正直勇敢有阅读量" draggable="false">
-    </picture>
-  </button>
-  <button class="item item--obj item--mag item--m2a" type="button" data-item="merch" style="--sw:1330;--fx:632.4;--fy:336.7;--mx:13;--my:47;--dx:52;--dy:26;--rot:2.0deg">
-    <picture>
-      <source type="image/webp" srcset="assets/objects/webp/magnet-m2-ancora-mingtian-480.webp 480w, assets/objects/webp/magnet-m2-ancora-mingtian-800.webp 800w" sizes="(min-width: 900px) 138px, 118px">
-      <img class="obj-img" src="assets/objects/magnet-m2-ancora-mingtian.png" width="1330" height="756" alt="冰箱贴，还有明天" draggable="false">
-    </picture>
-  </button>
-  <button class="item item--obj item--mag item--m4" type="button" data-item="merch" style="--sw:1312;--fx:759.5;--fy:658.4;--mx:13;--my:53;--dx:37;--dy:7;--rot:2.2deg">
-    <picture>
-      <source type="image/webp" srcset="assets/objects/webp/magnet-m4-yuzhou-480.webp 480w, assets/objects/webp/magnet-m4-yuzhou-800.webp 800w" sizes="(min-width: 900px) 118px, 100px">
-      <img class="obj-img" src="assets/objects/magnet-m4-yuzhou.png" width="1312" height="1303" alt="冰箱贴，宇宙探索编辑部" draggable="false">
-    </picture>
-  </button>
-  <button class="item item--obj item--mag item--m3" type="button" data-item="merch" style="--sw:948;--fx:458.0;--fy:687.8;--mx:2;--my:53;--dx:28;--dy:26;--rot:-1.6deg">
-    <picture>
-      <source type="image/webp" srcset="assets/objects/webp/magnet-m3-black-yellow-400.webp 400w, assets/objects/webp/magnet-m3-black-yellow-720.webp 720w" sizes="(min-width: 900px) 78px, 64px">
-      <img class="obj-img" src="assets/objects/magnet-m3-black-yellow.png" width="948" height="1340" alt="相框冰箱贴，黑黄款" draggable="false">
-    </picture>
-  </button>
 
-  <p class="item item--foot" style="--mx:1;--my:81;--dx:2;--dy:35;--rot:0deg">
+  <p class="item item--foot" style="--mx:1;--my:91;--dx:2;--dy:38;--rot:0deg">
     <span>© 2026 dP狸</span>
     <span>chenzunhao.com</span>
   </p>
@@ -176,8 +201,8 @@
   },
   "contact": {
     "title": "联系与合作",
-    "meta": "邮箱待确认",
-    "html": "<p>招聘和合作，都可以通过邮件联系。</p><p>邮箱待确认，确认后会写在这张卡片上。微信二维码待补。</p><p>也可以先去小红书看「二流观众」，或在即刻找到 dP狸。</p><p><a href=\"https://www.xiaohongshu.com/user/profile/5f94220900000000010039cf\" target=\"_blank\" rel=\"noopener\">小红书</a>　<a href=\"https://m.okjike.com/users/d6f4612a-1024-4c9c-8fbe-d637015b8bdb\" target=\"_blank\" rel=\"noopener\">即刻</a></p>"
+    "meta": "ali13893309735@163.com",
+    "html": "<p>招聘和合作，都可以通过邮件联系。</p><p><a href=\"mailto:ali13893309735@163.com\">ali13893309735@163.com</a>。微信二维码待补。</p><p>也可以先去小红书看「二流观众」，或在即刻找到 dP狸。</p><p><a href=\"https://www.xiaohongshu.com/user/profile/5f94220900000000010039cf\" target=\"_blank\" rel=\"noopener\">小红书</a>　<a href=\"https://m.okjike.com/users/d6f4612a-1024-4c9c-8fbe-d637015b8bdb\" target=\"_blank\" rel=\"noopener\">即刻</a></p>"
   },
   "huxiu": {
     "title": "虎嗅APP 视频号",
@@ -222,7 +247,7 @@
   "merch": {
     "title": "原创周边",
     "meta": "二流观众 · 3D 打印冰箱贴",
-    "html": "<p>为「二流观众」独立完成原创周边的3D设计、打样生产、包装和电商详情页，并在小红书开设店铺。店铺销量1000+单，其中「好东西」系列冰箱贴400件+。</p><p>板上这组冰箱贴每款留了一件：「我正直勇敢有阅读量」、「还有明天」、「宇宙探索编辑部」，以及一枚相框造型。</p>"
+    "html": "<p>为「二流观众」独立完成原创周边的3D设计、打样生产、包装和电商详情页，并在小红书开设店铺。店铺销量1000+单，其中「好东西」系列冰箱贴400件+。</p><p>这四枚冰箱贴可在「3D 打印」里查看：「我正直勇敢有阅读量」、「还有明天」、「宇宙探索编辑部」，以及一枚相框造型。已确认的模型在 MakerWorld 上，作者是二流观众。</p>"
   }
 }
 </script>

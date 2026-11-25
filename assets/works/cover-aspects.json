@@ -34,27 +34,27 @@
     "assets/works/covers/2247484997.jpg": {
       "w": 307,
       "h": 307,
-      "ratio": "3:4"
+      "ratio": "1:1"
     },
     "assets/works/covers/2247484990.jpg": {
       "w": 945,
       "h": 945,
-      "ratio": "3:4"
+      "ratio": "1:1"
     },
     "assets/works/covers/2247484324.jpg": {
       "w": 960,
       "h": 960,
-      "ratio": "3:4"
+      "ratio": "1:1"
     },
     "assets/works/covers/2247485120.jpg": {
       "w": 960,
       "h": 960,
-      "ratio": "3:4"
+      "ratio": "1:1"
     },
     "assets/works/covers/2247484945.jpg": {
       "w": 959,
       "h": 960,
-      "ratio": "3:4"
+      "ratio": "1:1"
     },
     "assets/works/covers/2247484792.jpg": {
       "w": 960,
@@ -430,6 +430,66 @@
       "w": 323,
       "h": 430,
       "ratio": "3:4"
+    },
+    "assets/works/covers/lamp-drawer.jpg": {
+      "w": 1084,
+      "h": 1447,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/lamp-box.jpg": {
+      "w": 1080,
+      "h": 810,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/merch-3d-magnets.jpg": {
+      "w": 1321,
+      "h": 1256,
+      "ratio": "1:1"
+    },
+    "assets/works/covers/2247484307.jpg": {
+      "w": 1080,
+      "h": 1943,
+      "ratio": "3:4"
+    },
+    "assets/works/covers/2247484303.jpg": {
+      "w": 640,
+      "h": 218,
+      "ratio": "4:3"
+    },
+    "assets/works/covers/2247484302.jpg": {
+      "w": 434,
+      "h": 325,
+      "ratio": "4:3"
+    },
+    "assets/works/makerworld/3472695-cover.png": {
+      "w": 1448,
+      "h": 1086,
+      "ratio": "4:3"
+    },
+    "assets/works/makerworld/1178134-cover.png": {
+      "w": 1757,
+      "h": 1318,
+      "ratio": "4:3"
+    },
+    "assets/works/makerworld/1082603-cover.png": {
+      "w": 1080,
+      "h": 810,
+      "ratio": "4:3"
+    },
+    "assets/works/makerworld/975141-cover.png": {
+      "w": 1920,
+      "h": 1440,
+      "ratio": "4:3"
+    },
+    "assets/works/makerworld/945888-cover.png": {
+      "w": 1782,
+      "h": 1376,
+      "ratio": "4:3"
+    },
+    "assets/works/makerworld/823205-cover.png": {
+      "w": 1314,
+      "h": 986,
+      "ratio": "4:3"
     }
   }
 }

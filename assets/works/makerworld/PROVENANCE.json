@@ -1,0 +1,175 @@
+{
+  "note": "Official MakerWorld covers only. Files are unmodified downloads of each model's official coverUrl. STL and 3MF files were not rehosted. No official in-site 3D viewer embed was found in MakerWorld public documentation, so the site links out to the official model page.",
+  "retrieved": "2026-11-25",
+  "timezone": "Asia/Shanghai",
+  "author": {
+    "name": "二流观众",
+    "handle": "ALILILLLLLL",
+    "uid": 2085386752,
+    "profileZh": "https://makerworld.com/zh/@ALILILLLLLL",
+    "profileEn": "https://makerworld.com/en/@ALILILLLLLL",
+    "modelsList": "https://makerworld.com/en/@ALILILLLLLL/upload",
+    "avatar": "https://public-cdn.bblmw.com/avatar/2085386752/2024-11-26_e53a5e036170e8.png"
+  },
+  "authorshipVerification": [
+    "Both of the user's WeChat articles about the lamp storage box link to https://makerworld.com/zh/models/3472695-xiaomi-desk-lamp-1st-generation-base-storage-box (also via #profileId-3964006).",
+    "The official MakerWorld profile https://makerworld.com/zh/@ALILILLLLLL and https://makerworld.com/en/@ALILILLLLLL display the name 二流观众, handle @ALILILLLLLL, and uid 2085386752. The profile tab lists 3D Models (6).",
+    "The public design API https://api.bambulab.com/v1/design-service/design/{id}?trafficSource=browse returns designCreator.name 二流观众, designCreator.handle ALILILLLLLL, and designCreator.uid 2085386752 for all six models listed below.",
+    "The handle ALILILLLLLL matches the requested identity 阿狸狸llllll. The display name 二流观众 is also on the requested identity list."
+  ],
+  "unconfirmed": [
+    {
+      "item": "相框冰箱贴 (physical photo magnet-m3-black-yellow)",
+      "reason": "Present as a printed object photo on the site, but none of the six public models on @ALILILLLLLL is a matching picture-frame magnet. Not linked to a MakerWorld page."
+    },
+    {
+      "item": "Separate MakerWorld accounts under dP狸, dPLilll, 陈遵浩, 阿狸狸, Audience2",
+      "reason": "Ownership of the six models was confirmed on 二流观众 / @ALILILLLLLL. No additional accounts were added without the same official confirmation."
+    }
+  ],
+  "embed": {
+    "officialIframeOrViewer": false,
+    "action": "Link out to the official MakerWorld model page only."
+  },
+  "models": [
+    {
+      "id": 3472695,
+      "title": "米家台灯1代底座收纳盒",
+      "titleTranslated": "Xiaomi Desk Lamp 1st Generation Base Storage Box",
+      "slug": "xiaomi-desk-lamp-1st-generation-base-storage-box",
+      "urlZh": "https://makerworld.com/zh/models/3472695-xiaomi-desk-lamp-1st-generation-base-storage-box",
+      "urlEn": "https://makerworld.com/en/models/3472695-xiaomi-desk-lamp-1st-generation-base-storage-box",
+      "author": "二流观众",
+      "authorHandle": "ALILILLLLLL",
+      "authorUid": 2085386752,
+      "coverUrl": "https://makerworld.bblmw.com/makerworld/model/US93f6606e868b21/design/6755dc99df9fb82a.png",
+      "coverLocal": {
+        "file": "assets/works/makerworld/3472695-cover.png",
+        "format": "PNG",
+        "width": 1448,
+        "height": 1086
+      },
+      "createTime": "2026-10-21T14:43:36Z",
+      "license": "BY-NC-ND",
+      "api": "https://api.bambulab.com/v1/design-service/design/3472695?trafficSource=browse",
+      "hasOfficialEmbed": false,
+      "coverPortrait": "https://makerworld.bblmw.com/makerworld/model/US93f6606e868b21/design/da76c40541ebffc1.png"
+    },
+    {
+      "id": 1178134,
+      "title": "《还有明天》片名挂件冰箱贴",
+      "titleTranslated": "Tomorrow's Still Here Movie Title Refrigerator Magnet",
+      "slug": "tomorrow-s-still-here-movie-title-refrigerator-mag",
+      "urlZh": "https://makerworld.com/zh/models/1178134-tomorrow-s-still-here-movie-title-refrigerator-mag",
+      "urlEn": "https://makerworld.com/en/models/1178134-tomorrow-s-still-here-movie-title-refrigerator-mag",
+      "author": "二流观众",
+      "authorHandle": "ALILILLLLLL",
+      "authorUid": 2085386752,
+      "coverUrl": "https://makerworld.bblmw.com/makerworld/model/DSM00000001178134/design/2025-03-05_232764bc324a6.png",
+      "coverLocal": {
+        "file": "assets/works/makerworld/1178134-cover.png",
+        "format": "PNG",
+        "width": 1757,
+        "height": 1318
+      },
+      "createTime": "2025-03-05T15:39:57Z",
+      "license": "BY-NC",
+      "api": "https://api.bambulab.com/v1/design-service/design/1178134?trafficSource=browse",
+      "hasOfficialEmbed": false,
+      "coverPortrait": "https://makerworld.bblmw.com/makerworld/model/DSM00000001178134/design/2025-03-05_9e916418ac585.png"
+    },
+    {
+      "id": 1082603,
+      "title": "花样年华 25周年导演特别版 LOGO挂件冰箱贴",
+      "titleTranslated": "In the Mood for Love 25th Anniversary Director's Special Edition LOGO Pendant Refrigerator Magnet",
+      "slug": "in-the-mood-for-love-25th-anniversary-director-s-s",
+      "urlZh": "https://makerworld.com/zh/models/1082603-in-the-mood-for-love-25th-anniversary-director-s-s",
+      "urlEn": "https://makerworld.com/en/models/1082603-in-the-mood-for-love-25th-anniversary-director-s-s",
+      "author": "二流观众",
+      "authorHandle": "ALILILLLLLL",
+      "authorUid": 2085386752,
+      "coverUrl": "https://makerworld.bblmw.com/makerworld/model/US5445cc0017c71b/design/2025-02-07_e1a6ec6dfd827.jpg",
+      "coverLocal": {
+        "file": "assets/works/makerworld/1082603-cover.png",
+        "format": "PNG",
+        "width": 1080,
+        "height": 810
+      },
+      "createTime": "2025-02-07T13:23:29Z",
+      "license": "BY-NC",
+      "api": "https://api.bambulab.com/v1/design-service/design/1082603?trafficSource=browse",
+      "hasOfficialEmbed": false,
+      "coverPortrait": "https://makerworld.bblmw.com/makerworld/model/US5445cc0017c71b/design/2025-02-07_cb1a2bbe9ea2e8.jpg",
+      "coverNote": "Official coverUrl uses a .jpg path, but the response bytes are a PNG (1080x810). Saved locally as 1082603-cover.png."
+    },
+    {
+      "id": 975141,
+      "title": "宇宙探索编辑部片名logo",
+      "titleTranslated": "Cosmic Exploration Editorial Department Title Logo",
+      "slug": "cosmic-exploration-editorial-department-title-logo",
+      "urlZh": "https://makerworld.com/zh/models/975141-cosmic-exploration-editorial-department-title-logo",
+      "urlEn": "https://makerworld.com/en/models/975141-cosmic-exploration-editorial-department-title-logo",
+      "author": "二流观众",
+      "authorHandle": "ALILILLLLLL",
+      "authorUid": 2085386752,
+      "coverUrl": "https://makerworld.bblmw.com/makerworld/model/US972b84402dba97/design/2025-01-10_7ba83403db5e7.jpg",
+      "coverLocal": {
+        "file": "assets/works/makerworld/975141-cover.png",
+        "format": "PNG",
+        "width": 1920,
+        "height": 1440
+      },
+      "createTime": "2025-01-10T14:56:45Z",
+      "license": "BY-NC",
+      "api": "https://api.bambulab.com/v1/design-service/design/975141?trafficSource=browse",
+      "hasOfficialEmbed": false,
+      "coverPortrait": "https://makerworld.bblmw.com/makerworld/model/US972b84402dba97/design/2025-01-10_fb67e8e299f2a.png",
+      "coverNote": "Official coverUrl uses a .jpg path, but the response bytes are a PNG (1920x1440). Saved locally as 975141-cover.png."
+    },
+    {
+      "id": 945888,
+      "title": "【苔花公约】标志挂件",
+      "titleTranslated": "【Moss Flower Covenant】Badge Pendant",
+      "slug": "moss-flower-covenant-badge-pendant",
+      "urlZh": "https://makerworld.com/zh/models/945888-moss-flower-covenant-badge-pendant",
+      "urlEn": "https://makerworld.com/en/models/945888-moss-flower-covenant-badge-pendant",
+      "author": "二流观众",
+      "authorHandle": "ALILILLLLLL",
+      "authorUid": 2085386752,
+      "coverUrl": "https://makerworld.bblmw.com/makerworld/model/US7200cf3f4e52a9/design/2025-01-03_247da69e0ed0a.png",
+      "coverLocal": {
+        "file": "assets/works/makerworld/945888-cover.png",
+        "format": "PNG",
+        "width": 1782,
+        "height": 1376
+      },
+      "createTime": "2025-01-03T15:43:50Z",
+      "license": "BY-NC",
+      "api": "https://api.bambulab.com/v1/design-service/design/945888?trafficSource=browse",
+      "hasOfficialEmbed": false,
+      "coverPortrait": "https://makerworld.bblmw.com/makerworld/model/US7200cf3f4e52a9/design/2025-01-03_31e5896f6f2c98.png"
+    },
+    {
+      "id": 823205,
+      "title": "电影《好东西》台词冰箱贴&挂件",
+      "titleTranslated": "Film \"Good Things\" Dialogue Refrigerator Magnets & Pendants",
+      "slug": "film-good-things-dialogue-refrigerator-magnets-pen",
+      "urlZh": "https://makerworld.com/zh/models/823205-film-good-things-dialogue-refrigerator-magnets-pen",
+      "urlEn": "https://makerworld.com/en/models/823205-film-good-things-dialogue-refrigerator-magnets-pen",
+      "author": "二流观众",
+      "authorHandle": "ALILILLLLLL",
+      "authorUid": 2085386752,
+      "coverUrl": "https://makerworld.bblmw.com/makerworld/model/USc4c91a297f0b7c/design/2024-11-26_eac049ab6279c8.png",
+      "coverLocal": {
+        "file": "assets/works/makerworld/823205-cover.png",
+        "format": "PNG",
+        "width": 1314,
+        "height": 986
+      },
+      "createTime": "2024-11-26T02:06:28Z",
+      "license": "BY-NC",
+      "api": "https://api.bambulab.com/v1/design-service/design/823205?trafficSource=browse",
+      "hasOfficialEmbed": false
+    }
+  ]
+}

@@ -1,0 +1,570 @@
+{
+  "source": {
+    "title": "陈遵浩作品集",
+    "account": "dP狸",
+    "short": "https://reurl.cc/nYYyOD",
+    "homepage": "https://mp.weixin.qq.com/mp/homepage?__biz=MzI0OTY4MDIxNg==&hid=1&sn=7fd806436dcf28eab9920847a8438e39"
+  },
+  "tabs": [
+    {
+      "id": "video",
+      "label": "视频",
+      "key": "视频"
+    },
+    {
+      "id": "design",
+      "label": "平面设计",
+      "key": "平面设计"
+    },
+    {
+      "id": "posts",
+      "label": "推文",
+      "key": "推文"
+    },
+    {
+      "id": "photos",
+      "label": "摄影",
+      "key": "摄影"
+    },
+    {
+      "id": "reviews",
+      "label": "影评",
+      "key": "影评"
+    }
+  ],
+  "items": {
+    "视频": [
+      {
+        "id": "2247484940",
+        "title": "个人剪辑作品",
+        "date": "2025.07.30",
+        "note": "个人剪辑作品合集",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247484940&idx=1&sn=ba7de7fe69507d70f2c5a340bdefcad5",
+        "cover": "assets/works/covers/2247484940.jpg",
+        "coverWebp": "assets/works/webp/2247484940.webp",
+        "kind": "album",
+        "recent": false
+      },
+      {
+        "id": "2247484935",
+        "title": "“嗅一下”商业科技短视频",
+        "date": "2025.07.30",
+        "note": "「嗅一下」商业科技短视频合集",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247484935&idx=1&sn=133c1087cc27b1926a7922ca5245d9db",
+        "cover": "assets/works/covers/2247484935.jpg",
+        "coverWebp": "assets/works/webp/2247484935.webp",
+        "kind": "album",
+        "recent": false
+      },
+      {
+        "id": "2247484781",
+        "title": "我要的不过是别浪费这盛夏",
+        "date": "2022.06.17",
+        "note": "开始在盛夏 结束在盛夏 我要的不过是别浪费这盛夏～",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247484781&idx=1&sn=a0a54f64e00d20fe52fe0e38fff18831",
+        "cover": "assets/works/covers/2247484781.jpg",
+        "coverWebp": "assets/works/webp/2247484781.webp",
+        "kind": "video",
+        "recent": false
+      }
+    ],
+    "平面设计": [
+      {
+        "id": "2247485453",
+        "title": "动动嘴，AI就能给台灯做个底座抽屉！",
+        "date": "2026.10.23",
+        "note": "",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247485453&idx=1&sn=1ca93e99b4e3a04226667b5dee91d1ef",
+        "cover": "assets/works/covers/2247485453.jpg",
+        "coverWebp": "assets/works/webp/2247485453.webp",
+        "kind": "article",
+        "recent": true
+      },
+      {
+        "id": "a26",
+        "title": "用即梦的 seedance 太佩服字节的产品能力了",
+        "date": "2026.02.27",
+        "note": "",
+        "link": "",
+        "cover": "assets/works/covers/a26.jpg",
+        "coverWebp": "assets/works/webp/a26.webp",
+        "kind": "article",
+        "recent": true
+      },
+      {
+        "id": "2247485048",
+        "title": "大事不妙！我发现毕赣还是“致敬主理人”",
+        "date": "2025.11.24",
+        "note": "🎬火车进站 毕赣在创作中常融入对电影史的致敬，火车这一意象就关联着电影的起源",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247485048&idx=1&sn=e5458523d06f44ae1d6e8bf2b0fc2bfc",
+        "cover": "assets/works/covers/2247485048.jpg",
+        "coverWebp": "assets/works/webp/2247485048.webp",
+        "kind": "article",
+        "recent": false
+      },
+      {
+        "id": "2247484997",
+        "title": "“二流观众”小红书图文",
+        "date": "2025.11.23",
+        "note": "「二流观众」小红书图文合集",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247484997&idx=1&sn=b881787fc30881cb1760cde54314a3cc",
+        "cover": "assets/works/covers/2247484997.jpg",
+        "coverWebp": "assets/works/webp/2247484997.webp",
+        "kind": "album",
+        "recent": false
+      },
+      {
+        "id": "2247484990",
+        "title": "“嗅一下”小红书图文",
+        "date": "2025.07.31",
+        "note": "「嗅一下」小红书图文合集",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247484990&idx=1&sn=c731620a56e1180e742eae55e6d115ab",
+        "cover": "assets/works/covers/2247484990.jpg",
+        "coverWebp": "assets/works/webp/2247484990.webp",
+        "kind": "album",
+        "recent": false
+      },
+      {
+        "id": "2247484324",
+        "title": "小红书图文卡片",
+        "date": "2025.07.30",
+        "note": "小红书图文卡片合集",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247484324&idx=1&sn=0c955218479a9ba6886006f27d0d7909",
+        "cover": "assets/works/covers/2247484324.jpg",
+        "coverWebp": "assets/works/webp/2247484324.webp",
+        "kind": "album",
+        "recent": false
+      }
+    ],
+    "推文": [
+      {
+        "id": "a24",
+        "title": "建议媒体和公关好好学一下中文呢",
+        "date": "2026.03.29",
+        "note": "",
+        "link": "",
+        "cover": "assets/works/covers/a24.jpg",
+        "coverWebp": "assets/works/webp/a24.webp",
+        "kind": "article",
+        "recent": true
+      },
+      {
+        "id": "2247484278",
+        "title": "开启新旅程——苏州大学2020年录取通知书来啦！！！",
+        "date": "2024.10.26",
+        "note": "金榜将题君名，捷报蓄势待发。苏州大学建校120周年校庆特别纪念版通知书新鲜出炉",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247484278&idx=1&sn=83b4892ed87609b35271420318a71806",
+        "cover": "assets/works/covers/2247484278.jpg",
+        "coverWebp": "assets/works/webp/2247484278.webp",
+        "kind": "album",
+        "recent": false
+      },
+      {
+        "id": "2247484261",
+        "title": "电子信息学院2021届本科生就业质量报告",
+        "date": "2024.10.24",
+        "note": "电子信息学院2021届本科生就业质量报告",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247484261&idx=1&sn=a3cd37fd9d00cc235371bcc8c2e4691d",
+        "cover": "assets/works/covers/2247484261.jpg",
+        "coverWebp": "assets/works/webp/2247484261.webp",
+        "kind": "album",
+        "recent": false
+      },
+      {
+        "id": "2247484301",
+        "title": "苏大你好，我......想见你！",
+        "date": "2024.10.20",
+        "note": "想见你想见你想见你只想见你，我想到未来去见你！",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247484301&idx=1&sn=5114d84bc68215cd6b5a626669507947",
+        "cover": "assets/works/covers/2247484301.jpg",
+        "coverWebp": "assets/works/webp/2247484301.webp",
+        "kind": "album",
+        "recent": false
+      },
+      {
+        "id": "2247484308",
+        "title": "如你所“院” | 未来的卓越电子工程师——苏州大学电子信息学院欢迎你！",
+        "date": "2024.10.24",
+        "note": "电子信息科学，日新月异；互联互通技术，飞速发展。三十多年来",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247484308&idx=1&sn=b472d7a190f06dbf2b86a51713ebb754",
+        "cover": "assets/works/covers/2247484308.jpg",
+        "coverWebp": "assets/works/webp/2247484308.webp",
+        "kind": "album",
+        "recent": false
+      },
+      {
+        "id": "2247484309",
+        "title": "爱你们的小招，期待被表白！",
+        "date": "2025.07.30",
+        "note": "及时 准确 用心在苏大相遇与苏大一起前行续写无悔青春路",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247484309&idx=1&sn=6a894b273a0cb7cfa0b348126e4ae87d",
+        "cover": "assets/works/covers/2247484309.jpg",
+        "coverWebp": "assets/works/webp/2247484309.webp",
+        "kind": "album",
+        "recent": false
+      },
+      {
+        "id": "2247484304",
+        "title": "漫画苏大，慢话你的苏大生活~",
+        "date": "2024.10.24",
+        "note": "学住食最全攻略，打消你对苏大的最后一丝顾虑~",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247484304&idx=1&sn=2c9433d3716cdf421e1fbabbc06ac062",
+        "cover": "assets/works/covers/2247484304.jpg",
+        "coverWebp": "assets/works/webp/2247484304.webp",
+        "kind": "album",
+        "recent": false
+      },
+      {
+        "id": "2247484299",
+        "title": "小招揭秘 | 2020全日制普通本科新生大数据",
+        "date": "2024.10.26",
+        "note": "及时 准确 用心在苏大相遇与苏大一起前行续写无悔青春路",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247484299&idx=1&sn=9f828f24dcf01b18ed6a1dd888bd05f0",
+        "cover": "assets/works/covers/2247484299.jpg",
+        "coverWebp": "assets/works/webp/2247484299.webp",
+        "kind": "album",
+        "recent": false
+      },
+      {
+        "id": "2247484305",
+        "title": "小招揭秘 | 你一定没通过这样的方式见过录取现场",
+        "date": "2024.10.28",
+        "note": "你与苏大的距离越来越近~",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247484305&idx=1&sn=8a4b885ddfadcef77f6c7e03724f08d4",
+        "cover": "assets/works/covers/2247484305.jpg",
+        "coverWebp": "assets/works/webp/2247484305.webp",
+        "kind": "album",
+        "recent": false
+      },
+      {
+        "id": "2247484306",
+        "title": "小招揭秘 | 想知道通知书是如何送到你手中的？",
+        "date": "2024.10.24",
+        "note": "想见你想见你想见你，4224份通知书想见你~",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247484306&idx=1&sn=5139fdb6dc1cb43b4fa92f563f4a6470",
+        "cover": "assets/works/covers/2247484306.jpg",
+        "coverWebp": "assets/works/webp/2247484306.webp",
+        "kind": "album",
+        "recent": false
+      }
+    ],
+    "摄影": [
+      {
+        "id": "2247485120",
+        "title": "阳光，空气，还有水",
+        "date": "2026.01.08",
+        "note": "超级市场发了新的专辑 还是一如既往好听 还在关照世界与明天",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247485120&idx=1&sn=17ff09c43dc82c45740e9f92b8a8c67c",
+        "cover": "assets/works/covers/2247485120.jpg",
+        "coverWebp": "assets/works/webp/2247485120.webp",
+        "kind": "article",
+        "recent": false
+      },
+      {
+        "id": "2247484945",
+        "title": "摄影作品（视频号发表）",
+        "date": "2025.07.31",
+        "note": "发表在视频号上的摄影作品合集",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247484945&idx=1&sn=ac89b4194029f5b1ac5565c01dc05a07",
+        "cover": "assets/works/covers/2247484945.jpg",
+        "coverWebp": "assets/works/webp/2247484945.webp",
+        "kind": "album",
+        "recent": false
+      },
+      {
+        "id": "2247484792",
+        "title": "「生活在别处」 想每天泡在博物馆",
+        "date": "2022.07.25",
+        "note": "",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247484792&idx=1&sn=699c2c13a238f7615422af5a52c4b9cd",
+        "cover": "assets/works/covers/2247484792.jpg",
+        "coverWebp": "assets/works/webp/2247484792.webp",
+        "kind": "article",
+        "recent": false
+      },
+      {
+        "id": "2247484225",
+        "title": "有几片云的晴空 除了感动还有微风",
+        "date": "2021.10.25",
+        "note": "",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247484225&idx=1&sn=d002c4fe4ef57513be8891e78d2e5bdb",
+        "cover": "assets/works/covers/2247484225.jpg",
+        "coverWebp": "assets/works/webp/2247484225.webp",
+        "kind": "article",
+        "recent": false
+      },
+      {
+        "id": "2247484226",
+        "title": "你说大雾快散了 散了之后住下好不好 你在我心留下一颗宇宙 谜样的情节之后 结局无法剧透",
+        "date": "2021.10.26",
+        "note": "",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247484226&idx=1&sn=046103f005ab9b0ba3e140cf72d2f6ba",
+        "cover": "assets/works/covers/2247484226.jpg",
+        "coverWebp": "assets/works/webp/2247484226.webp",
+        "kind": "article",
+        "recent": false
+      },
+      {
+        "id": "2247484233",
+        "title": "碧空如洗 目光如炬 我好冻啊",
+        "date": "2021.11.08",
+        "note": "",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247484233&idx=1&sn=d824c40ddb8ef6b62c3f29c2af7fb817",
+        "cover": "assets/works/covers/2247484233.jpg",
+        "coverWebp": "assets/works/webp/2247484233.webp",
+        "kind": "article",
+        "recent": false
+      },
+      {
+        "id": "2247484234",
+        "title": "原来秋天这么美 不要腐烂在冬天",
+        "date": "2021.11.19",
+        "note": "",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247484234&idx=1&sn=098b7a12d37b4f060e2bb8355bdee6e7",
+        "cover": "assets/works/covers/2247484234.jpg",
+        "coverWebp": "assets/works/webp/2247484234.webp",
+        "kind": "article",
+        "recent": false
+      },
+      {
+        "id": "2247484223",
+        "title": "穿梭于十盒之间 沉溺在冬夏边界",
+        "date": "2021.10.24",
+        "note": "",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247484223&idx=1&sn=b76d0cdbd9a8ee9e475cf241d26d8525",
+        "cover": "assets/works/covers/2247484223.jpg",
+        "coverWebp": "assets/works/webp/2247484223.webp",
+        "kind": "article",
+        "recent": false
+      },
+      {
+        "id": "2247484237",
+        "title": "🍂 何处无秋 何处无银杏 在甘南路 也在弘毅院 在道前街 也在东吴园",
+        "date": "2021.11.24",
+        "note": "",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247484237&idx=1&sn=bf7e8d9991096cdf0fb35571f28919d2",
+        "cover": "assets/works/covers/2247484237.jpg",
+        "coverWebp": "assets/works/webp/2247484237.webp",
+        "kind": "article",
+        "recent": false
+      },
+      {
+        "id": "2247484312",
+        "title": "天很蓝 日子漫长",
+        "date": "2022.03.16",
+        "note": "",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247484312&idx=1&sn=0d7f3211587ce864869cfc5eeaa806e7",
+        "cover": "assets/works/covers/2247484312.jpg",
+        "coverWebp": "assets/works/webp/2247484312.webp",
+        "kind": "article",
+        "recent": false
+      }
+    ],
+    "影评": [
+      {
+        "id": "2247485239",
+        "title": "龙虾清空单身狗，石头姐清空全人类，我们都有光明的未来",
+        "date": "2026.03.18",
+        "note": "",
+        "link": "",
+        "cover": "assets/works/covers/2247485239.jpg",
+        "coverWebp": "assets/works/webp/2247485239.webp",
+        "kind": "article",
+        "recent": true
+      },
+      {
+        "id": "2247485254",
+        "title": "《至尊马蒂》的“美国反对美国”",
+        "date": "2026.03.22",
+        "note": "",
+        "link": "",
+        "cover": "assets/works/covers/2247485254.jpg",
+        "coverWebp": "assets/works/webp/2247485254.webp",
+        "kind": "article",
+        "recent": true
+      },
+      {
+        "id": "a27",
+        "title": "这部电影的选曲品味，太夯了",
+        "date": "2026.03.24",
+        "note": "",
+        "link": "",
+        "cover": "assets/works/covers/a27.jpg",
+        "coverWebp": "assets/works/webp/a27.webp",
+        "kind": "article",
+        "recent": true
+      },
+      {
+        "id": "2247485160",
+        "title": "郑重声明：本人决定永久退出春节档",
+        "date": "2026.02.18",
+        "note": "“宁可犯错，不要Boring。”",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247485160&idx=1&sn=d86f84f9d36820727b97fdf79fe48c88",
+        "cover": "assets/works/covers/2247485160.jpg",
+        "coverWebp": "assets/works/webp/2247485160.webp",
+        "kind": "article",
+        "recent": false
+      },
+      {
+        "id": "2247485014",
+        "title": "请称呼毕赣为“解构中国电影主理人”",
+        "date": "2025.11.23",
+        "note": "这是一部关于中国的电影",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247485014&idx=1&sn=3fe4514d35bb86fbb663744cfb10b321",
+        "cover": "assets/works/covers/2247485014.jpg",
+        "coverWebp": "assets/works/webp/2247485014.webp",
+        "kind": "article",
+        "recent": false
+      },
+      {
+        "id": "2247485060",
+        "title": "那个地球村，只存在于“疯狂动物城”中",
+        "date": "2025.11.30",
+        "note": "迪士尼胆子很大！",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247485060&idx=1&sn=66fba47b10444817b227d78ee65a2a06",
+        "cover": "assets/works/covers/2247485060.jpg",
+        "coverWebp": "assets/works/webp/2247485060.webp",
+        "kind": "article",
+        "recent": false
+      },
+      {
+        "id": "2247485108",
+        "title": "贝拉塔尔 尼采 一颗土豆 与 8小时工作制",
+        "date": "2026.01.06",
+        "note": "你也可以安静地吃完那颗土豆吗？",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247485108&idx=1&sn=bb8d2abf230a8e7ac0833ee6d5b916c3",
+        "cover": "assets/works/covers/2247485108.jpg",
+        "coverWebp": "assets/works/webp/2247485108.webp",
+        "kind": "article",
+        "recent": false
+      },
+      {
+        "id": "2247485193",
+        "title": "凯瑟琳根本不爱希斯克利夫！",
+        "date": "2026.03.16",
+        "note": "《呼啸山庄》被误读的两百年",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247485193&idx=1&sn=05c7660506d714164797b2cc4be6600f",
+        "cover": "assets/works/covers/2247485193.jpg",
+        "coverWebp": "assets/works/webp/2247485193.webp",
+        "kind": "article",
+        "recent": false
+      },
+      {
+        "id": "2247485184",
+        "title": "弗兰肯斯坦与小龙虾（Frankenstein & OpenClaw）",
+        "date": "2026.03.15",
+        "note": "一场30万Star的AI失控实验",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247485184&idx=1&sn=b1016df4ebc191b273a7e9b8429f21dd",
+        "cover": "assets/works/covers/2247485184.jpg",
+        "coverWebp": "assets/works/webp/2247485184.webp",
+        "kind": "article",
+        "recent": false
+      },
+      {
+        "id": "2247485179",
+        "title": "为什么《暗黑新娘！》让你不满意？",
+        "date": "2026.03.08",
+        "note": "你是谁的新娘？我是我自己的新娘！",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247485179&idx=1&sn=f4ef0c7d30bfb0708e103032f88b0705",
+        "cover": "assets/works/covers/2247485179.jpg",
+        "coverWebp": "assets/works/webp/2247485179.webp",
+        "kind": "article",
+        "recent": false
+      },
+      {
+        "id": "2247485145",
+        "title": "你给翻译翻译，什么他爸的叫非传统浪漫关系？",
+        "date": "2026.01.31",
+        "note": "",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247485145&idx=1&sn=2723dc29674b9a0c106bed7f39389b78",
+        "cover": "assets/works/covers/2247485145.jpg",
+        "coverWebp": "assets/works/webp/2247485145.webp",
+        "kind": "article",
+        "recent": false
+      },
+      {
+        "id": "2247485137",
+        "title": "每个人心中，都有一片波光粼粼的“翠湖”",
+        "date": "2026.01.24",
+        "note": "“那些无法言说的脆弱，终究需要一池湖水来接纳。”",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247485137&idx=1&sn=408fa54523f7e713d758b4c3bf39ba35",
+        "cover": "assets/works/covers/2247485137.jpg",
+        "coverWebp": "assets/works/webp/2247485137.webp",
+        "kind": "article",
+        "recent": false
+      },
+      {
+        "id": "2247485130",
+        "title": "为《不过是上班》还在讨论的话题感到可悲",
+        "date": "2026.01.10",
+        "note": "8小时工作制已经喊了两百年，可现实……",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247485130&idx=1&sn=fd23542b5d08f8dc186f9fd8dd8bbb6a",
+        "cover": "assets/works/covers/2247485130.jpg",
+        "coverWebp": "assets/works/webp/2247485130.webp",
+        "kind": "article",
+        "recent": false
+      },
+      {
+        "id": "2247485099",
+        "title": "开年王炸！当倒计时拒绝归零，我被硬控96分钟",
+        "date": "2026.01.03",
+        "note": "关于《96分钟：列车爆炸案》最后那“多出来的一分钟”",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247485099&idx=1&sn=75c24a9e9b3475c27a98d2bf7588782b",
+        "cover": "assets/works/covers/2247485099.jpg",
+        "coverWebp": "assets/works/webp/2247485099.webp",
+        "kind": "article",
+        "recent": false
+      },
+      {
+        "id": "2247485087",
+        "title": "对《阿凡达》祛魅了……",
+        "date": "2025.12.18",
+        "note": "还不如《赛德克巴莱》好看",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247485087&idx=1&sn=ffc5e6f9d15b591e705a149edb8d9cc6",
+        "cover": "assets/works/covers/2247485087.jpg",
+        "coverWebp": "assets/works/webp/2247485087.webp",
+        "kind": "article",
+        "recent": false
+      },
+      {
+        "id": "2247485076",
+        "title": "关于“肖战最佳”“年度十佳”的三个问题",
+        "date": "2025.12.06",
+        "note": "表达不极致就不要表达，主演演不好就不要来演电影了",
+        "link": "https://mp.weixin.qq.com/s?__biz=MzI0OTY4MDIxNg==&mid=2247485076&idx=1&sn=6762b6f5edfc3533cc415e9a2631af1f",
+        "cover": "assets/works/covers/2247485076.jpg",
+        "coverWebp": "assets/works/webp/2247485076.webp",
+        "kind": "article",
+        "recent": false
+      }
+    ]
+  },
+  "objects": {
+    "magazine": {
+      "id": "2247485160",
+      "title": "郑重声明：本人决定永久退出春节档",
+      "cover": "assets/works/covers/2247485160.jpg",
+      "coverWebp": "assets/works/webp/2247485160.webp"
+    },
+    "polaroids": [
+      {
+        "id": "2247484237",
+        "title": "🍂 何处无秋 何处无银杏 在甘南路 也在弘毅院 在道前街 也在东吴园",
+        "cover": "assets/works/covers/2247484237.jpg",
+        "coverWebp": "assets/works/webp/2247484237.webp"
+      },
+      {
+        "id": "2247484792",
+        "title": "「生活在别处」 想每天泡在博物馆",
+        "cover": "assets/works/covers/2247484792.jpg",
+        "coverWebp": "assets/works/webp/2247484792.webp"
+      },
+      {
+        "id": "2247484225",
+        "title": "有几片云的晴空 除了感动还有微风",
+        "cover": "assets/works/covers/2247484225.jpg",
+        "coverWebp": "assets/works/webp/2247484225.webp"
+      }
+    ]
+  }
+}

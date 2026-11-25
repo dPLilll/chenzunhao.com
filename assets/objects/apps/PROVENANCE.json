@@ -1,0 +1,60 @@
+{
+  "note": "Official app icons only. These files are unmodified brand artwork; physical tile frames are separate rendered objects.",
+  "icons": [
+    {
+      "id": "photoshop",
+      "label": "Photoshop",
+      "file": "photoshop.png",
+      "svg": "photoshop.svg",
+      "source": {
+        "kind": "official-product-icon",
+        "organization": "Adobe Inc.",
+        "page": "https://commons.wikimedia.org/wiki/File:Adobe_Photoshop_CC_2026_icon.svg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Adobe_Photoshop_CC_2026_icon.svg",
+        "upstream": "https://www.adobe.com/cc-shared/assets/img/product-icons/svg/photoshop-40.svg",
+        "retrieved": "2026-11-24"
+      },
+      "corroboration": {
+        "kind": "app-store-artwork",
+        "store": "Apple App Store",
+        "app": "Adobe Photoshop: Photo Editor",
+        "trackId": 1457771281,
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d4/da/1e/d4da1efa-c555-2344-1919-93100e2b18da/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/1024x1024bb.png",
+        "file": "src/photoshop-appstore-1024.png"
+      }
+    },
+    {
+      "id": "jianying",
+      "label": "剪映",
+      "file": "jianying.png",
+      "source": {
+        "kind": "app-store-artwork",
+        "store": "Apple App Store (China)",
+        "app": "剪映 - 抖音官方AI创作神器",
+        "bundleId": "com.lemon.lv",
+        "trackId": 1458072671,
+        "seller": "Shenzhen Lianmeng Technology Co.Ltd.",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7a/ec/2d/7aec2ddf-ae24-137e-876c-40a0ee5f5d78/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/1024x1024bb.png",
+        "appPage": "https://apps.apple.com/cn/app/id1458072671",
+        "officialSite": "https://www.capcut.cn/",
+        "retrieved": "2026-11-24"
+      }
+    },
+    {
+      "id": "shapr3d",
+      "label": "Shapr3D",
+      "file": "shapr3d.png",
+      "source": {
+        "kind": "app-store-artwork",
+        "store": "Apple App Store",
+        "app": "Shapr 3D CAD modeling",
+        "trackId": 1091675654,
+        "seller": "Shapr 3D Zartkoruen Mukodo Reszvenytarsasag",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/56/2a/38/562a384e-8a4d-e441-1994-9bdf2f6689a3/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/1024x1024bb.png",
+        "appPage": "https://apps.apple.com/app/id1091675654",
+        "officialSite": "https://www.shapr3d.com/",
+        "retrieved": "2026-11-24"
+      }
+    }
+  ]
+}
